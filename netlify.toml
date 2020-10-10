@@ -2,3 +2,6 @@
   from = "/api/check-repository"
   to = '/.netlify/functions/check-repository'
   status = 200
+
+[build]
+  functions = "functions"

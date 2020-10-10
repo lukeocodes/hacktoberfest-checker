@@ -1,8 +1,8 @@
 <template>
   <div>
     <!-- Hero start -->
-    <div class="h-without-header w-full z-0">
-      <div class="flex flex-col items-center text-center justify-end h-3/4">
+    <div class="z-0 w-full h-without-header">
+      <div class="flex flex-col items-center justify-end text-center h-3/4">
         <div class="w-1/2">
           <h1 class="Title">Do they <strong>Hacktoberfest?</strong></h1>
           <p class="Subtitle">
@@ -17,7 +17,7 @@
           <div v-else-if="result">result</div>
           <div v-else class="relative">
             <svg
-              class="absolute top-0 mt-6 ml-6 w-8 h-8 text-gray-600"
+              class="absolute top-0 w-8 h-8 mt-6 ml-6 text-gray-600"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -31,13 +31,13 @@
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
-            <form class="flex">
+            <form class="flex" @submit.prevent="checkRepository()">
               <input
                 class="Input"
                 type="text"
                 placeholder="e.g. https://github.com/digitalocean/hacktoberfest"
               />
-              <button class="Button">Do they?</button>
+              <button class="Button" type="submit">Do they?</button>
             </form>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default {
   },
 
   methods: {
-    async fetchSomething() {
+    async checkRepository() {
       const result = await this.$axios.$get('/api/check-repository')
       console.log(result)
       this.result = result
