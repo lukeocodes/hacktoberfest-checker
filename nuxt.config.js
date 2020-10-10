@@ -1,6 +1,11 @@
+const baseUrl = process.env.URL || 'http://localhost:3000'
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
+
+  // Env (https://nuxtjs.org/api/configuration-env/)
+  env: { baseUrl },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -47,7 +52,21 @@ export default {
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    baseURL: baseUrl, // Used as fallback if no runtime config is provided
+  },
+
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: baseUrl,
+    },
+  },
+
+  privateRuntimeConfig: {
+    axios: {
+      baseURL: baseUrl,
+    },
+  },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
