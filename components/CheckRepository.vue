@@ -7,7 +7,7 @@
           <h1 class="Title">Do they <strong>Hacktoberfest?</strong></h1>
           <p class="Subtitle">
             Check if a project takes part in
-            <strong>Hacktoberfest?</strong> this year by looking up their
+            <strong>Hacktoberfest</strong> this year by looking up their
             repository URL.
           </p>
         </div>
@@ -101,6 +101,14 @@
   border-right-color: #9c4668;
   border-top-color: #9c4668;
   border-bottom-color: #9c4668;
+}
+
+.dark-mode .Button {
+  color: #072540;
+  background-color: rgb(226, 232, 240);
+  border-right-color: rgb(226, 232, 240);
+  border-top-color: rgb(226, 232, 240);
+  border-bottom-color: rgb(226, 232, 240);
 }
 
 .dark-mode .Button:hover {
