@@ -1,4 +1,4 @@
-const baseUrl = process.env.URL || 'http://localhost:3000'
+const baseUrl = process.env.URL || 'http://localhost:8888'
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)

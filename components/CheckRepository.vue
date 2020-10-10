@@ -12,9 +12,19 @@
           </p>
         </div>
         <div class="w-4/5 mt-4 mb-8">
-          <div v-if="processing">processing...</div>
-          <div v-else-if="isErrors">an error occured</div>
-          <div v-else-if="result">result</div>
+          <div v-if="isErrors">an error occured</div>
+          <div v-else-if="result">
+            <h2
+              class="Title"
+              :class="{
+                'Title--yes': theyHacktoberfest,
+                'Title--no': !theyHacktoberfest,
+              }"
+            >
+              {{ theyHacktoberfest ? 'Yes' : 'No' }}
+            </h2>
+          </div>
+          <div v-else-if="processing">processing...</div>
           <div v-else class="relative">
             <svg
               class="absolute top-0 w-8 h-8 mt-6 ml-6 text-gray-600"
@@ -40,6 +50,9 @@
               <button class="Button" type="submit">Do they?</button>
             </form>
           </div>
+          <div>
+            {{ previous }}
+          </div>
         </div>
       </div>
     </div>
@@ -50,10 +63,18 @@
 <script>
 export default {
   data() {
+    let previous = []
+
+    if (process.browser) {
+      previous =
+        JSON.parse(window.localStorage.getItem('previousResults')) || []
+    }
+
     return {
       processing: false,
       errors: [],
       result: null,
+      previous,
     }
   },
 
@@ -61,13 +82,31 @@ export default {
     isErrors() {
       return this.errors.length !== 0
     },
+
+    theyHacktoberfest() {
+      return this.result.topic || this.result.tag_prs
+    },
   },
 
   methods: {
-    async checkRepository() {
-      const result = await this.$axios.$get('/api/check-repository')
-      console.log(result)
-      this.result = result
+    checkRepository() {
+      this.processing = true
+      this.$axios
+        .$get('/api/check-repository')
+        .then((result) => {
+          this.processing = false
+          this.result = result
+          this.previous.push(result)
+          if (process.browser) {
+            window.localStorage.setItem(
+              'previousResults',
+              JSON.stringify(this.previous)
+            )
+          }
+        })
+        .catch((error) => {
+          this.errors.push(error)
+        })
     },
   },
 }

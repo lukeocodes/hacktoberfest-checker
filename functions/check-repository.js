@@ -12,6 +12,12 @@
 exports.handler = function (event, context, callback) {
   callback(null, {
     statusCode: 200,
-    body: 'Hello, World',
+    body: JSON.stringify({
+      url: 'https://github.com/lukeocodes/guys-bot',
+      date: new Date(),
+      topic: true,
+      tag_prs: true,
+      recent_prs: true,
+    }),
   })
 }
