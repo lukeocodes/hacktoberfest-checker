@@ -12,7 +12,10 @@
           </p>
         </div>
         <div class="w-4/5 mt-4 mb-8">
-          <div class="relative">
+          <div v-if="processing">processing...</div>
+          <div v-else-if="isErrors">an error occured</div>
+          <div v-else-if="result">result</div>
+          <div v-else class="relative">
             <svg
               class="absolute top-0 mt-6 ml-6 w-8 h-8 text-gray-600"
               xmlns="http://www.w3.org/2000/svg"
@@ -28,14 +31,14 @@
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
-            <div class="flex">
+            <form class="flex">
               <input
                 class="Input"
                 type="text"
                 placeholder="e.g. https://github.com/digitalocean/hacktoberfest"
               />
               <button class="Button">Do they?</button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -43,6 +46,32 @@
     <!-- Hero end -->
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      processing: false,
+      errors: [],
+      result: null,
+    }
+  },
+
+  computed: {
+    isErrors() {
+      return this.errors.length !== 0
+    },
+  },
+
+  methods: {
+    async fetchSomething() {
+      const result = await this.$axios.$get('/api/check-repository')
+      console.log(result)
+      this.result = result
+    },
+  },
+}
+</script>
 
 <style scoped>
 .Title {

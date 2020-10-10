@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/api/check-repository"
+  to = '/.netlify/functions/check-repository'
+  status = 200
