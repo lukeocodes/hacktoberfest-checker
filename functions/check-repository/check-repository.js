@@ -17,11 +17,12 @@ const octokit = new Octokit({
 
 const keyTopic = 'hacktoberfest'
 const keyPrLabel = 'hacktoberfest-accepted'
+const validUrlPrefix = 'https://github.com/'
 
-const getRepo = async () => {
+const getRepo = async (owner, repo) => {
   return await octokit.repos.get({
-    owner: 'lukeocodes',
-    repo: 'hacktoberfest-checker',
+    owner,
+    repo,
   })
 }
 
@@ -58,31 +59,51 @@ const hasTaggedPrs = (pulls) => {
   )
 }
 
-exports.handler = async (event, context, callback) => {
-  const { data: repo } = await getRepo(
-    'https://github.com/lukeocodes/hacktoberfest-checker'
-  )
-  const topics = await getTopics(repo)
-  const pulls = await getPulls(repo)
-
-  const body = {
-    name: repo.name,
-    description: repo.description,
-    url: repo.html_url,
-    requested_at: new Date(),
-    topics,
-    topic: hasTopic(topics),
-    tag_prs: hasTaggedPrs(pulls),
-    recent_prs: false, // todo: return true if it has any PRs approved/merged in the last X days - probably won't do this
-    repo_updated_at: repo.updated_at,
-    language: repo.language,
-    license: repo.license,
-    forks: repo.forks,
-    stargazers_count: repo.stargazers_count,
+const getValidUrl = (url) => {
+  if (!url.startsWith(validUrlPrefix)) {
+    throw new Error("It's not a GitHub repository URL!")
   }
 
-  callback(null, {
-    statusCode: 200,
-    body: JSON.stringify(body),
-  })
+  url = new URL(url)
+  const [, repoOwner, repoName] = url.pathname.split('/')
+
+  return {
+    repoOwner,
+    repoName,
+  }
+}
+
+exports.handler = async (event, context, callback) => {
+  try {
+    const { repoOwner, repoName } = getValidUrl(event.queryStringParameters.url)
+    const { data: repo } = await getRepo(repoOwner, repoName)
+    const topics = await getTopics(repo)
+    const pulls = await getPulls(repo)
+
+    const body = {
+      name: repo.name,
+      description: repo.description,
+      url: repo.html_url,
+      requested_at: new Date(),
+      topics,
+      topic: hasTopic(topics),
+      tag_prs: hasTaggedPrs(pulls),
+      recent_prs: false, // todo: return true if it has any PRs approved/merged in the last X days - probably won't do this
+      repo_updated_at: repo.updated_at,
+      language: repo.language,
+      license: repo.license,
+      forks: repo.forks,
+      stargazers_count: repo.stargazers_count,
+    }
+
+    callback(null, {
+      statusCode: 200,
+      body: JSON.stringify(body),
+    })
+  } catch (error) {
+    callback(null, {
+      statusCode: 500,
+      body: JSON.stringify({ ...error, message: error.errorMessage }),
+    })
+  }
 }
