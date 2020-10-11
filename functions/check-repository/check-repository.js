@@ -47,6 +47,16 @@ const getPulls = async (repo) => {
   return pulls
 }
 
+const getOpenHelpWantedIssues = async (repo) => {
+  const { data: issues } = await octokit.issues.listForRepo({
+    owner: repo.owner.login,
+    repo: repo.name,
+    state: 'open',
+    labels: 'help wanted'
+  });
+  return issues;
+}
+
 const hasTopic = (topics) => {
   return topics.includes(keyTopic)
 }
@@ -79,6 +89,7 @@ exports.handler = async (event, context, callback) => {
     const { data: repo } = await getRepo(repoOwner, repoName)
     const topics = await getTopics(repo)
     const pulls = await getPulls(repo)
+    const openHelpWantedIssues = await getOpenHelpWantedIssues(repo);
 
     const body = {
       name: repo.name,
@@ -89,6 +100,7 @@ exports.handler = async (event, context, callback) => {
       topic: hasTopic(topics),
       tag_prs: hasTaggedPrs(pulls),
       recent_prs: false, // todo: return true if it has any PRs approved/merged in the last X days - probably won't do this
+      open_help_wanted_issue_count: openHelpWantedIssues.length,
       repo_updated_at: repo.updated_at,
       language: repo.language,
       license: repo.license,
