@@ -1,5 +1,6 @@
 :root {
   --color-bascay: #183d5d;
+  --color-black-squeeze : #f1f7fa;
   --color-downriver: #072540;
   --color-lavender-rose: #ff8ae2;
   --color-morning-glory: #93c2db;
@@ -8,18 +9,18 @@
   --color-white: #ffffff;
 
   --color: var(--color-waikawa-gray);
-  --color-primary: var(--color-waikawa-gray);
   --color-secondary: var(--color-vin-rouge);
   --color-tertiary: var(--color-bascay);
   --bg: var(--color-white);
+  --bg-secondary: var(--color-black-squeeze);
 }
 
 .dark-mode {
   --color: var(--color-morning-glory);
-  --color-primary: var(--color-morning-glory);
   --color-secondary: var(--color-lavender-rose);
   --color-tertiary: var(--color-white);
   --bg: var(--color-downriver);
+  --bg-secondary: var(--color-bascay);
 }
 
 body {
@@ -30,7 +31,7 @@ body {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color);
 }
 a:hover {
   color: var(--color-secondary);
