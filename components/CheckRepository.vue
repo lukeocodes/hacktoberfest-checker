@@ -53,7 +53,14 @@
               Check another?
             </a>
           </div>
-          <div v-else-if="processing" class="Processing">Processing...</div>
+          <div v-else-if="processing" class="Processing">
+            <scale-loader
+              :loading="processing"
+              :color="loaderOpt.color"
+              :height="loaderOpt.height"
+              :width="loaderOpt.width"
+            ></scale-loader>
+          </div>
           <div v-else class="relative">
             <svg
               class="absolute top-0 w-8 h-8 mt-6 ml-6 text-gray-600"
@@ -99,13 +106,23 @@
 </template>
 
 <script>
+import ScaleLoader from 'vue-spinner/src/ScaleLoader.vue'
+
 export default {
+  components: {
+    ScaleLoader,
+  },
   data() {
     return {
       processing: false,
       errors: [],
       result: null,
       previous: [],
+      loaderOpt: {
+        color: '#ff8ae2',
+        height: '50px',
+        width: '10px',
+      },
     }
   },
 
