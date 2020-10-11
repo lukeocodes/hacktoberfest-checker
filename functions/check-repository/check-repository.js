@@ -58,20 +58,6 @@ const hasTaggedPrs = (pulls) => {
   )
 }
 
-// const hasRecentApprovedPrs = (repo, pulls) => {
-//   pulls.forEach((p) => {
-//     const res = octokit.pulls.checkIfMerged({
-//       owner: repo.owner.login,
-//       repo: repo.name,
-//       pull_number: p.number,
-//     })
-
-//     console.log(res)
-//   })
-
-//   return true
-// }
-
 exports.handler = async (event, context, callback) => {
   const { data: repo } = await getRepo(
     'https://github.com/lukeocodes/hacktoberfest-checker'
@@ -79,24 +65,20 @@ exports.handler = async (event, context, callback) => {
   const topics = await getTopics(repo)
   const pulls = await getPulls(repo)
 
-  // console.log(pulls)
-
   const body = {
     name: repo.name,
     description: repo.description,
     url: repo.html_url,
     requested_at: new Date(),
     topic: hasTopic(topics),
-    tag_prs: hasTaggedPrs(pulls), // todo: return true if it has any (THIS YEAR) `hacktoberfest` tagged PRs
-    recent_prs: true, // todo: return true if it has any PRs approved/merged in the last X days
+    tag_prs: hasTaggedPrs(pulls),
+    recent_prs: false, // todo: return true if it has any PRs approved/merged in the last X days - probably won't do this
     repo_updated_at: repo.updated_at,
     language: repo.language,
     license: repo.license,
     forks: repo.forks,
     stargazers_count: repo.stargazers_count,
   }
-
-  // console.log(body)
 
   callback(null, {
     statusCode: 200,
