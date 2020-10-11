@@ -124,6 +124,7 @@
                   :key="index"
                   :repo="repo"
                   @remove="removePrevious"
+                  @refresh="refreshPrevious"
                 />
               </template>
               <li v-else>No previous repo checks found... yet!</li>
@@ -205,6 +206,16 @@ export default {
 
     removePrevious(key) {
       this.previous = this.previous.filter((p, i) => i !== key)
+    },
+
+    refreshPrevious(key) {
+      this.resetForm()
+
+      const repo = this.previous[key]
+      this.previous = this.previous.filter((p, i) => i !== key)
+      this.url = repo.url
+
+      this.checkRepository()
     },
   },
 }

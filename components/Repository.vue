@@ -11,11 +11,21 @@
         <p class="flex-initial pr-10">
           {{ repo.description }}
         </p>
-        <div
-          class="flex-1 pl-10 text-right"
-          @click="$emit('remove', $vnode.key)"
-        >
-          Remove
+        <div class="flex-1 pl-10 text-right">
+          <div class="inline-flex">
+            <button
+              class="Button Button__Remove"
+              @click="$emit('remove', $vnode.key)"
+            >
+              Remove
+            </button>
+            <button
+              class="Button Button__Refresh"
+              @click="$emit('refresh', $vnode.key)"
+            >
+              Refresh
+            </button>
+          </div>
         </div>
       </div>
 
@@ -127,6 +137,7 @@ export default {
 .Repository {
   @apply border-t text-left py-4;
 }
+
 .Repository:last-child {
   @apply border-b;
 }
@@ -137,6 +148,27 @@ export default {
 
 .Repository__Name {
   @apply text-xl;
+}
+
+.Button {
+  @apply py-1 px-2 font-bold border-2 text-sm;
+  border-color: var(--color-tertiary);
+}
+
+.Button:focus {
+  @apply outline-none;
+}
+
+.Button:hover {
+  background-color: var(--bg-secondary);
+}
+
+.Button__Remove {
+  @apply border-r-0 rounded-l;
+}
+
+.Button__Refresh {
+  @apply border-l-0 rounded-r;
 }
 
 .Language__Color {
