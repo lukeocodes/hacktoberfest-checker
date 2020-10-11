@@ -12,7 +12,18 @@
           </p>
         </div>
         <div class="w-4/5 mt-4 mb-8">
-          <div v-if="isErrors">an error occured</div>
+          <div v-if="isErrors" class="Errors">
+            <h3>
+              Please correct the following error{{
+                errors.length > 1 ? 's' : ''
+              }}:
+            </h3>
+            <ul>
+              <li v-for="(error, index) in errors" :key="index">
+                {{ error.message ? error.message : error }}
+              </li>
+            </ul>
+          </div>
           <div v-else-if="result">
             <h2
               class="Title"
@@ -24,7 +35,7 @@
               {{ theyHacktoberfest ? 'Yes' : 'No' }}
             </h2>
           </div>
-          <div v-else-if="processing">processing...</div>
+          <div v-else-if="processing" class="Processing">Processing...</div>
           <div v-else class="relative">
             <svg
               class="absolute top-0 w-8 h-8 mt-6 ml-6 text-gray-600"
@@ -72,7 +83,7 @@ export default {
 
     return {
       processing: false,
-      errors: [],
+      errors: [{ message: 'testing' }],
       result: null,
       previous,
     }
