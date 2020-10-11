@@ -4,6 +4,8 @@
   --color-secondary: #9c4668;
   --color-tertiary: #183d5d;
   --bg: #fff;
+  --color-contrast: #072540;
+  --bg-contrast: #ff8ae2;
 }
 
 .dark-mode {
@@ -12,6 +14,8 @@
   --color-secondary: #ff8ae2;
   --color-tertiary: #fff;
   --bg: #072540;
+  --color-contrast: #072540;
+  --bg-contrast: #93c2db;
 }
 
 body {
@@ -29,4 +33,8 @@ a:hover {
 }
 a:active {
   color: var(--color-tertiary);
+}
+
+.highlight {
+  color: var(--color-secondary);
 }
