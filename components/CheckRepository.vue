@@ -42,7 +42,7 @@
               Check another?
             </a>
           </div>
-          <div v-else-if="result">
+          <div v-else-if="result" class="Result">
             <h2
               class="Title"
               :class="{
@@ -52,6 +52,11 @@
             >
               {{ theyHacktoberfest ? 'Yes' : 'No' }}
             </h2>
+            <h3>
+              Results are in! <strong>{{ result.name }}</strong>
+              {{ theyHacktoberfest ? 'is' : 'is not' }} taking part in
+              <strong>Hacktoberfest</strong> so far.
+            </h3>
             <a
               href="#"
               class="inline-flex items-center px-4 py-2 font-bold text-gray-800 bg-gray-300 rounded hover:bg-gray-400"
@@ -221,6 +226,14 @@ export default {
 }
 
 .Subtitle strong {
+  color: var(--color-secondary);
+}
+
+.Result h3 {
+  @apply mb-4;
+  color: var(--color-tertiary);
+}
+.Result h3 strong {
   color: var(--color-secondary);
 }
 
