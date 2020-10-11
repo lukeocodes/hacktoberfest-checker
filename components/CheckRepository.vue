@@ -120,7 +120,7 @@ export default {
         .then((result) => {
           this.processing = false
           this.result = result
-          this.previous.push(result)
+          this.previous.unshift(result)
         })
         .catch((error) => {
           this.errors.push(error)

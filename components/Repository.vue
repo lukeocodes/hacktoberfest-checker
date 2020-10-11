@@ -92,11 +92,11 @@
         </span>
 
         <span>
-          Updated
+          Requested
           <span
-            :datetime="repo.repo_updated_at"
-            :title="new Date(repo.repo_updated_at).toString()"
-            >{{ repo.repo_updated_at | moment('from') }}</span
+            :datetime="repo.requested_at"
+            :title="new Date(repo.requested_at).toString()"
+            >{{ repo.requested_at | moment('from') }}</span
           >
         </span>
       </div>
