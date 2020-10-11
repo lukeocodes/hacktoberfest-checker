@@ -32,6 +32,22 @@ export default {
 .nuxt-content h5,
 .nuxt-content h6 {
   font-family: 'Inter Regular', 'Helvetica', 'Arial', san-serif;
+}
+
+.nuxt-content {
   color: var(--color);
+}
+
+.nuxt-content h1,
+.nuxt-content h2,
+.nuxt-content h3,
+.nuxt-content h4,
+.nuxt-content h5,
+.nuxt-content h6 {
+  color: var(--color-tertiary);
+}
+
+.prose a {
+  color: var(--color-secondary);
 }
 </style>
