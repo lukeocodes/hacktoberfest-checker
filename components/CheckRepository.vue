@@ -97,16 +97,20 @@ export default {
           this.processing = false
           this.result = result
           this.previous.push(result)
-          if (process.browser) {
-            window.localStorage.setItem(
-              'previousResults',
-              JSON.stringify(this.previous)
-            )
-          }
+          this.savePreviousResults()
         })
         .catch((error) => {
           this.errors.push(error)
         })
+    },
+
+    savePreviousResults() {
+      if (process.browser) {
+        window.localStorage.setItem(
+          'previousResults',
+          JSON.stringify(this.previous)
+        )
+      }
     },
   },
 }
