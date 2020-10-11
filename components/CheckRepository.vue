@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- Hero start -->
     <div class="z-0 w-full h-without-header">
       <div class="flex flex-col items-center justify-end text-center h-3/4">
         <div class="w-1/2">
@@ -67,7 +66,6 @@
         </div>
       </div>
     </div>
-    <!-- Hero end -->
   </div>
 </template>
 
@@ -83,7 +81,7 @@ export default {
 
     return {
       processing: false,
-      errors: [{ message: 'testing' }],
+      errors: [],
       result: null,
       previous,
     }
