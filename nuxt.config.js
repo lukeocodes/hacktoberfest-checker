@@ -1,3 +1,4 @@
+require('dotenv').config()
 const baseUrl = process.env.URL || 'http://localhost:8888'
 
 export default {
