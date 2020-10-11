@@ -61,7 +61,17 @@
             </form>
           </div>
           <div>
-            {{ previous }}
+            <ul class="Previous">
+              <template v-if="previous.length > 0">
+                <Repository
+                  v-for="(repo, index) in previous"
+                  :key="index"
+                  :repo="repo"
+                  @remove="removePrevious"
+                />
+              </template>
+              <li v-else>No previous repo checks found... yet!</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -72,18 +82,11 @@
 <script>
 export default {
   data() {
-    let previous = []
-
-    if (process.browser) {
-      previous =
-        JSON.parse(window.localStorage.getItem('previousResults')) || []
-    }
-
     return {
       processing: false,
       errors: [],
       result: null,
-      previous,
+      previous: [],
     }
   },
 
@@ -97,6 +100,18 @@ export default {
     },
   },
 
+  watch: {
+    previous(previous) {
+      localStorage.setItem('previousResults', JSON.stringify(previous))
+    },
+  },
+
+  mounted() {
+    if (localStorage.previousResults) {
+      this.previous = JSON.parse(localStorage.getItem('previousResults')) || []
+    }
+  },
+
   methods: {
     checkRepository() {
       this.processing = true
@@ -105,21 +120,15 @@ export default {
         .then((result) => {
           this.processing = false
           this.result = result
-          this.previous.push(result)
-          this.savePreviousResults()
+          this.previous.unshift(result)
         })
         .catch((error) => {
           this.errors.push(error)
         })
     },
 
-    savePreviousResults() {
-      if (process.browser) {
-        window.localStorage.setItem(
-          'previousResults',
-          JSON.stringify(this.previous)
-        )
-      }
+    removePrevious(key) {
+      this.previous = this.previous.filter((p, i) => i !== key)
     },
   },
 }
@@ -197,5 +206,9 @@ export default {
   border-right-color: #ff73fa;
   border-top-color: #ff73fa;
   border-bottom-color: #ff73fa;
+}
+
+.Previous {
+  @apply mt-10 w-9/12 mx-auto;
 }
 </style>
