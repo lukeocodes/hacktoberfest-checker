@@ -6,7 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "pregenerate": "cd functions/check && npm install",
+    "pregenerate": "cd functions/check-repository && npm install",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm run lint:js"
@@ -30,5 +30,6 @@
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.1.2",
     "tailwindcss-dark-mode": "^1.1.6"
-  }
+  },
+  "license": "MIT"
 }

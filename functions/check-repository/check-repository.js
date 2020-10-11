@@ -40,24 +40,28 @@ const hasTopic = (topics) => {
 }
 
 exports.handler = async (event, context, callback) => {
-  const repo = await getRepo()
+  const { data: repo } = await getRepo()
   const topics = await getTopics()
+
+  const body = {
+    name: repo.name,
+    description: repo.description,
+    url: repo.html_url,
+    requested_at: new Date(),
+    topic: hasTopic(topics),
+    tag_prs: true, // todo: return true if it has any (THIS YEAR) `hacktoberfest` tagged PRs
+    recent_prs: true, // todo: return true if it has any PRs approved/merged in the last X days
+    repo_updated_at: repo.updated_at,
+    language: repo.language,
+    license: repo.license,
+    forks: repo.forks,
+    stargazers_count: repo.stargazers_count,
+  }
+
+  console.log(body)
 
   callback(null, {
     statusCode: 200,
-    body: JSON.stringify({
-      name: repo.name,
-      description: repo.description,
-      url: repo.html_url,
-      requested_at: new Date(),
-      topic: hasTopic(topics),
-      tag_prs: true, // todo: return true if it has any (THIS YEAR) `hacktoberfest` tagged PRs
-      recent_prs: true, // todo: return true if it has any PRs approved/merged in the last X days
-      repo_updated_at: repo.updated_at,
-      language: repo.language,
-      license: repo.license,
-      forks: repo.forks,
-      stargazers_count: repo.stargazers_count,
-    }),
+    body: JSON.stringify(body),
   })
 }

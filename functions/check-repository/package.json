@@ -2,7 +2,7 @@
   "name": "check-repository",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "check-repository.js",
   "dependencies": {
     "@octokit/rest": "^18.0.6"
   }

@@ -92,7 +92,7 @@ export default {
     checkRepository() {
       this.processing = true
       this.$axios
-        .$get('/api/check')
+        .$get('/api/check-repository')
         .then((result) => {
           this.processing = false
           this.result = result
