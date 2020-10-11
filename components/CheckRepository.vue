@@ -75,7 +75,11 @@
           <div v-else-if="processing" class="Processing">
             <scale-loader
               :loading="processing"
-              :color="loaderOpt.color"
+              :color="
+                $colorMode.value == 'dark'
+                  ? loaderOpt.darkColor
+                  : loaderOpt.lightColor
+              "
               :height="loaderOpt.height"
               :width="loaderOpt.width"
             ></scale-loader>
@@ -141,7 +145,8 @@ export default {
       result: null,
       previous: [],
       loaderOpt: {
-        color: '#ff8ae2',
+        lightColor: '#9c4668',
+        darkColor: '#ff8ae2',
         height: '50px',
         width: '10px',
       },
