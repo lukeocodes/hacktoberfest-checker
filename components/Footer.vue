@@ -17,13 +17,13 @@
             <img alt="Twitter" class="Social__Image Social__Image--twitter" />
           </a>
           <a href="https://www.instagram.com/hacktoberfest/">
-            <img
-              alt="Instagram"
-              class="Social__Image Social__Image--instagram"
-            />
+            <img alt="Instagram" class="Social__Image Social__Image--instagram" />
           </a>
           <a href="https://discord.gg/hacktoberfest">
             <img alt="Discord" class="Social__Image Social__Image--discord" />
+          </a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://hacktoberfest.digitalocean.com/">
+            <img alt="Linkedin" class="Social__Image Social__Image--linkedin" />
           </a>
         </li>
       </ul>
@@ -89,6 +89,10 @@ footer {
 
 .Social__Image--discord {
   content: url('~@/assets/images/discord.svg') !important;
+}
+
+.Social__Image--linkedin {
+  content: url('https://www.freepik.com/free-icon/linkedin-logo_779994.htm') !important;
 }
 
 .dark-mode .Social__Image {
