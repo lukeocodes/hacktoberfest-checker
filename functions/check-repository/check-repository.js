@@ -70,6 +70,7 @@ exports.handler = async (event, context, callback) => {
     description: repo.description,
     url: repo.html_url,
     requested_at: new Date(),
+    topics,
     topic: hasTopic(topics),
     tag_prs: hasTaggedPrs(pulls),
     recent_prs: false, // todo: return true if it has any PRs approved/merged in the last X days - probably won't do this
