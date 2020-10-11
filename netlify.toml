@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "/api/check-repository"
-  to = '/.netlify/functions/check-repository'
+  from = "/api/check"
+  to = '/.netlify/functions/check'
   status = 200
 
 [build]
