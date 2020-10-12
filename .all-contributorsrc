@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Jchann24",
+      "name": "Jason Chan",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46631787?v=4",
+      "profile": "https://www.linkedin.com/in/jason-chan-44b828190",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "hacktoberfest-checker",
+  "projectOwner": "lukeocodes",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
