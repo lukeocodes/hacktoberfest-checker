@@ -114,6 +114,10 @@
           >{{ repo.license.name }}
         </span>
 
+        <span v-if="repo.open_help_wanted_issue_count">
+          {{ repo.open_help_wanted_issue_count }} issues need help
+        </span>
+
         <span>
           Requested
           <span
