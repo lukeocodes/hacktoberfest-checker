@@ -16,6 +16,15 @@
         "doc",
         "design"
       ]
+    },
+    {
+      "login": "charj",
+      "name": "Charlie",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/655807?v=4",
+      "profile": "https://charlie.fyi",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
