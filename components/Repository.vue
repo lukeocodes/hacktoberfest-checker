@@ -3,27 +3,50 @@
     <div>
       <div class="Repository__Row">
         <h3 class="flex Repository__Name">
-          <svg v-if="theyHacktoberfest" class="w-6 mr-2 text-teal-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          <svg
+            v-if="theyHacktoberfest"
+            class="w-6 mr-2 text-teal-500 fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"
+            />
           </svg>
-          <svg v-else class="w-6 mr-2 text-red-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+          <svg
+            v-else
+            class="w-6 mr-2 text-red-500 fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+              clip-rule="evenodd"
+            />
           </svg>
           <a :href="repo.url">{{ repo.long_name || repo.name }}</a>
         </h3>
       </div>
       <div class="flex Repository__Row">
-        <p class="flex-initial pr-10">
-          {{ repo.description }}<br />
+        <div class="flex-initial pr-10">
+          {{ repo.description }}
           <ul v-if="theyHacktoberfest" class="mt-2 ml-8 list-disc">
-            <li v-if="repo.topic"
-              ><code>hacktoberfest</code> topic</li
-            >
-            <li v-if="repo.tag_prs"
-              ><code>hacktoberfest-accepted</code> PRs</li
-            >
+            <li v-if="repo.topic"><code>hacktoberfest</code> topic</li>
+            <li v-if="repo.tag_prs"><code>hacktoberfest-accepted</code> PRs</li>
           </ul>
-        </p>
+          <ul v-if="!theyHacktoberfest" class="mt-2 ml-8 list-disc">
+            <li v-if="!repo.topic">Missing <code>hacktoberfest</code> topic</li>
+            <li v-if="!repo.tag_prs">
+              No <code>hacktoberfest-accepted</code> PRs
+            </li>
+            <li v-if="repo.banned">
+              <a :href="repo.banned_url">Excluded from Hacktoberfest</a>
+            </li>
+          </ul>
+        </div>
         <div class="flex-1 pl-10 text-right">
           <div class="inline-flex">
             <button
@@ -150,7 +173,7 @@ export default {
 
   computed: {
     theyHacktoberfest() {
-      return this.repo.topic || this.repo.tag_prs
+      return (this.repo.topic || this.repo.tag_prs) && !this.repo.banned
     },
   },
 }
@@ -204,6 +227,6 @@ export default {
 }
 
 .Repository__Row code {
-  @apply border px-1
+  @apply border px-1;
 }
 </style>

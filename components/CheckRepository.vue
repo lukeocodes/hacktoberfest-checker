@@ -165,7 +165,7 @@ export default {
     },
 
     theyHacktoberfest() {
-      return this.result.topic || this.result.tag_prs
+      return (this.result.topic || this.result.tag_prs) && !this.result.banned
     },
   },
 
