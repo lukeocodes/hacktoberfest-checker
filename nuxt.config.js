@@ -34,8 +34,12 @@ export default {
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content:
-          'hacktoberfest.ninja',
+        content: 'hacktoberfest.ninja',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: baseUrl + '/assets/images/OpenGraph.png',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
