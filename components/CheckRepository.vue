@@ -12,16 +12,24 @@
         </div>
         <div class="w-4/5 mt-4 mb-8">
           <div v-if="isErrors" class="Errors">
+
+            <h2
+              class="Title"
+            >
+              {{errors.length > 1 ? 'Errors' : 'Error'}}
+            </h2>
+
             <h3>
-              Please correct the following error{{
-                errors.length > 1 ? 's' : ''
-              }}:
+              <p>Your request for repository <strong>{{ url }}</strong> failed!</p>
+              <p>Check the following {{errors.length > 1 ? 'errors' : 'error'}}:</p>
+              <ul>
+                <li v-for="(error, index) in errors" :key="index">
+                  <code>{{ error.message ? error.message : error }}</code>
+                </li>
+              </ul>
             </h3>
-            <ul>
-              <li v-for="(error, index) in errors" :key="index">
-                {{ error.message ? error.message : error }}
-              </li>
-            </ul>
+            
+
             <a
               href="#"
               class="inline-flex items-center px-4 py-2 font-bold text-gray-800 bg-gray-300 rounded hover:bg-gray-400"
@@ -245,6 +253,14 @@ export default {
   color: var(--color-tertiary);
 }
 .Result h3 strong {
+  color: var(--color-secondary);
+}
+
+.Errors h3 {
+  @apply mb-4;
+  color: var(--color-tertiary);
+}
+.Errors h3 strong {
   color: var(--color-secondary);
 }
 
