@@ -18,6 +18,7 @@ const octokit = new Octokit({
 const keyTopic = 'hacktoberfest'
 const keyPrLabel = 'hacktoberfest-accepted'
 const validUrlPrefix = 'https://github.com/'
+const moderationAccount = 'hacktoberfest-team'
 
 const getRepo = async (owner, repo) => {
   return await octokit.repos.get({
@@ -54,7 +55,22 @@ const getOpenHelpWantedIssues = async (repo) => {
     state: 'open',
     labels: 'help wanted',
   })
+
   return issues
+}
+
+const banned = async (repo) => {
+  const { data: issues } = await octokit.issues.listForRepo({
+    owner: repo.owner.login,
+    repo: repo.name,
+    creator: moderationAccount,
+  })
+
+  return (
+    issues.filter(
+      (i) => i.title === 'Pull requests here won’t count toward Hacktoberfest.'
+    ).length > 0
+  )
 }
 
 const hasTopic = (topics) => {
@@ -107,6 +123,7 @@ exports.handler = async (event, context, callback) => {
       license: repo.license,
       forks: repo.forks,
       stargazers_count: repo.stargazers_count,
+      banned: await banned(repo),
     }
 
     callback(null, {
