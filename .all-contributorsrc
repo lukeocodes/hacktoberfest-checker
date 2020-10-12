@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "RascalTwo",
+      "name": "Rascal_Two",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/9403665?v=4",
+      "profile": "https://github.com/RascalTwo",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "hacktoberfest-checker",
+  "projectOwner": "lukeocodes",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
