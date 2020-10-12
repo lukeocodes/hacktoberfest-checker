@@ -59,17 +59,15 @@ const getOpenHelpWantedIssues = async (repo) => {
   return issues
 }
 
-const banned = async (repo) => {
+const getBannedIssues = async (repo) => {
   const { data: issues } = await octokit.issues.listForRepo({
     owner: repo.owner.login,
     repo: repo.name,
     creator: moderationAccount,
   })
 
-  return (
-    issues.filter(
-      (i) => i.title === 'Pull requests here won’t count toward Hacktoberfest.'
-    ).length > 0
+  return issues.filter(
+    (i) => i.title === 'Pull requests here won’t count toward Hacktoberfest.'
   )
 }
 
@@ -105,7 +103,9 @@ exports.handler = async (event, context, callback) => {
     const { data: repo } = await getRepo(repoOwner, repoName)
     const topics = await getTopics(repo)
     const pulls = await getPulls(repo)
-    const openHelpWantedIssues = await getOpenHelpWantedIssues(repo)
+    // const openHelpWantedIssues = await getOpenHelpWantedIssues(repo)
+    const bannedIssues = await getBannedIssues(repo)
+    const isBanned = bannedIssues.length > 0
 
     const body = {
       name: repo.name,
@@ -117,13 +117,14 @@ exports.handler = async (event, context, callback) => {
       topic: hasTopic(topics),
       tag_prs: hasTaggedPrs(pulls),
       recent_prs: false, // todo: return true if it has any PRs approved/merged in the last X days - probably won't do this
-      open_help_wanted_issue_count: openHelpWantedIssues.length,
+      open_help_wanted_issue_count: repo.open_issues_count,
       repo_updated_at: repo.updated_at,
       language: repo.language,
       license: repo.license,
       forks: repo.forks,
       stargazers_count: repo.stargazers_count,
-      banned: await banned(repo),
+      banned: isBanned,
+      banned_url: isBanned ? bannedIssues.shift().url : null,
     }
 
     callback(null, {
