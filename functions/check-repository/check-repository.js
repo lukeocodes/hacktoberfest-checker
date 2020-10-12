@@ -52,9 +52,9 @@ const getOpenHelpWantedIssues = async (repo) => {
     owner: repo.owner.login,
     repo: repo.name,
     state: 'open',
-    labels: 'help wanted'
-  });
-  return issues;
+    labels: 'help wanted',
+  })
+  return issues
 }
 
 const hasTopic = (topics) => {
@@ -89,10 +89,11 @@ exports.handler = async (event, context, callback) => {
     const { data: repo } = await getRepo(repoOwner, repoName)
     const topics = await getTopics(repo)
     const pulls = await getPulls(repo)
-    const openHelpWantedIssues = await getOpenHelpWantedIssues(repo);
+    const openHelpWantedIssues = await getOpenHelpWantedIssues(repo)
 
     const body = {
       name: repo.name,
+      long_name: `${repoOwner}/${repoName}`,
       description: repo.description,
       url: repo.html_url,
       requested_at: new Date(),
