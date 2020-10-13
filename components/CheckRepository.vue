@@ -3,8 +3,8 @@
     <div class="z-0 w-full h-without-header">
       <div class="flex flex-col items-center justify-end text-center h-3/4">
         <div class="w-1/2">
-          <h1 class="Title">Do they <strong>Hacktoberfest?</strong></h1>
-          <p class="Subtitle">
+          <h1 class="Title text-2xl md:text-4xl xl:text-6xl">Do they <strong>Hacktoberfest?</strong></h1>
+          <p class="Subtitle text-1xl md:text-2xl xl:text-3xl">
             Check if a project takes part in
             <strong>Hacktoberfest</strong> this year by looking up their
             repository URL.
@@ -12,23 +12,24 @@
         </div>
         <div class="w-4/5 mt-4 mb-8">
           <div v-if="isErrors" class="Errors">
-
-            <h2
-              class="Title"
-            >
-              {{errors.length > 1 ? 'Errors' : 'Error'}}
+            <h2 class="Title">
+              {{ errors.length > 1 ? 'Errors' : 'Error' }}
             </h2>
 
             <h3>
-              <p>Your request for repository <strong>{{ url }}</strong> failed!</p>
-              <p>Check the following {{errors.length > 1 ? 'errors' : 'error'}}:</p>
+              <p>
+                Your request for repository <strong>{{ url }}</strong> failed!
+              </p>
+              <p>
+                Check the following
+                {{ errors.length > 1 ? 'errors' : 'error' }}:
+              </p>
               <ul>
                 <li v-for="(error, index) in errors" :key="index">
                   <code>{{ error.message ? error.message : error }}</code>
                 </li>
               </ul>
             </h3>
-            
 
             <a
               href="#"
@@ -116,12 +117,12 @@
             <form class="flex" @submit.prevent="checkRepository()">
               <input
                 v-model="url"
-                class="Input"
+                class="Input text-sm md:text-1xl xl:text-3xl"
                 type="text"
                 placeholder="e.g. https://github.com/digitalocean/hacktoberfest"
                 :disabled="processing"
               />
-              <button :disabled="processing" class="Button">Do they?</button>
+              <button :disabled="processing" class="Button text-sm md:text-1xl xl:text-3xl">Do they?</button>
             </form>
           </div>
           <div>
@@ -241,8 +242,9 @@ export default {
 
 <style scoped>
 .Title {
-  @apply text-6xl font-bold leading-none mb-4;
+  @apply font-bold leading-none mb-4;
   color: var(--color-tertiary);
+  margin-top: 55px;
 }
 
 .Title strong {
@@ -250,7 +252,7 @@ export default {
 }
 
 .Subtitle {
-  @apply text-2xl leading-tight tracking-wide;
+  @apply leading-tight tracking-wide;
   color: var(--color-tertiary);
 }
 
@@ -275,7 +277,7 @@ export default {
 }
 
 .Input {
-  @apply bg-gray-100 text-3xl text-gray-800 pb-4 pt-5 pl-20 pr-4 rounded-l-lg w-full border-b-4 shadow-inner;
+  @apply bg-gray-100 text-gray-800 pb-4 pt-5 pl-20 pr-4 rounded-l-lg w-full border-b-4 shadow-inner;
 }
 
 .Input:focus {
@@ -284,7 +286,7 @@ export default {
 }
 
 .Button {
-  @apply px-8 rounded-r-lg w-1/4 text-3xl pb-4 pt-5 pl-4 pr-4 border-t border-b-4 border-r;
+  @apply px-8 rounded-r-lg w-1/4 pb-4 pt-5 pl-4 pr-4 border-t border-b-4 border-r;
   background-color: var(--color-tertiary);
   color: var(--bg);
   border-right-color: var(--color-tertiary);
