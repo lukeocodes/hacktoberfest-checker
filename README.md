@@ -24,7 +24,7 @@ $ npm install netlify-cli -g
 
 You need to create a GitHub Personal Access Token to be able to access the GitHub API from your local environment.
 
-[Follow the documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) and don't remember to copy the token before you leave the page (or you'll need to make two).
+[Follow the documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) and don't forget to copy the token before you leave the page (or you'll need to make two).
 
 It ***ONLY*** needs the `public_repo` scope. Adding more scopes could be a security risk.
 
