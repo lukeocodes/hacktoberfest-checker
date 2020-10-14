@@ -28,6 +28,14 @@ You need to create a GitHub Personal Access Token to be able to access the GitHu
 
 It ***ONLY*** needs the `public_repo` scope. Adding more scopes could be a security risk.
 
+### Install Packages
+
+To install the packages required for this project, run:
+
+```bash
+npm install
+```
+
 ### Configure Environment
 
 Create a `.env` file and add your access token to it as shown here.
