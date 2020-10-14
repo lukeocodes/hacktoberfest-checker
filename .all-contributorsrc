@@ -53,6 +53,15 @@
         "code",
         "bug"
       ]
+    },
+    {
+      "login": "GregHolmes",
+      "name": "Greg Holmes",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/2411269?v=4",
+      "profile": "https://github.com/GregHolmes",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
