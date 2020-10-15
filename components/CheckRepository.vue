@@ -190,6 +190,11 @@ export default {
     },
 
     checkRepository() {
+      if (null === this.url) {
+        alert("Please enter a url to check.")
+        return false;
+      }
+
       this.processing = true
       this.$axios
         .$get(`/api/check-repository?url=${this.url}`)
