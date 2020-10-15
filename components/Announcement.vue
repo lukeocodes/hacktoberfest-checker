@@ -13,7 +13,7 @@
 
 <style scoped>
 .Announcement__Link {
-  @apply block w-full py-4 pl-16 text-sm font-bold;
+  @apply block w-full py-4 px-10 text-sm font-bold;
   background-color: var(--color-lavender-rose);
   color: var(--color-downriver);
 }
@@ -22,11 +22,18 @@
   background-color: var(--color-morning-glory);
 }
 
-.Link__Button {
-  @apply bg-white py-2 px-4 mr-4 rounded uppercase;
-}
-
 .Announcement__Link:hover .Link__Text {
   @apply underline;
+}
+
+.Link__Button {
+  display: none;
+}
+
+@screen md {
+  .Link__Button {
+    display: initial;
+    @apply bg-white py-2 px-4 mr-4 rounded uppercase;
+  }
 }
 </style>
