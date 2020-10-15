@@ -191,8 +191,7 @@ export default {
 
     checkRepository() {
       if (null === this.url) {
-        alert("Please enter a url to check.")
-        return false;
+        return this.errors.push({message: 'Please enter a url to check.'});
       }
 
       this.processing = true
