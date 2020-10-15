@@ -30,7 +30,7 @@
           <a :href="repo.url">{{ repo.long_name || repo.name }}</a>
         </h3>
       </div>
-      <div class="flex Repository__Row">
+      <div class="Repository__Row">
         <div class="flex-initial pr-10">
           {{ repo.description }}
           <ul v-if="theyHacktoberfest" class="mt-2 ml-8 list-disc">
@@ -67,6 +67,7 @@
 
       <div v-if="repo.topics" class="Repository__Row">
         <a
+          class="Topic"
           v-for="(topic, index) in repo.topics"
           :key="index"
           :href="`https://github.com/topics/${topic}`"
@@ -75,7 +76,7 @@
         </a>
       </div>
 
-      <div class="flex space-x-10 text-sm Repository__Row">
+      <div class="space-x-10 text-sm Repository__Row Repository__Info">
         <span v-if="repo.language">
           <span
             v-if="colors[repo.language]"
@@ -228,5 +229,26 @@ export default {
 
 .Repository__Row code {
   @apply border px-1;
+}
+
+.Repository__Info {
+  display: none;
+}
+
+.Topic {
+  background-color: var(--topic-secondary);
+  box-shadow: inset 0 0 0 1px var(--topic-primary);
+  margin-right: 5px;
+  padding: 0px 10px;
+  border-radius: 50px;
+}
+
+@screen md {
+  .Repository__Info {
+    display: flex;
+  }
+  .Repository__Row {
+    @apply flex;
+  }
 }
 </style>

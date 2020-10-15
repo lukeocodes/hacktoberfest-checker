@@ -7,12 +7,18 @@
   --color-vin-rouge: #9c4668;
   --color-waikawa-gray: #5b6987;
   --color-white: #ffffff;
+  --color-science-blue: #0366d6;
+  --color-alice-blue: #f1f8ff;
+  --color-rock-blue: #9daccc;
+  --color-mirage: #182030;
 
   --color: var(--color-waikawa-gray);
   --color-secondary: var(--color-vin-rouge);
   --color-tertiary: var(--color-bascay);
   --bg: var(--color-white);
   --bg-secondary: var(--color-black-squeeze);
+  --topic-primary: var(--color-science-blue);
+  --topic-secondary: var(--color-alice-blue);
 }
 
 .dark-mode {
@@ -21,6 +27,8 @@
   --color-tertiary: var(--color-white);
   --bg: var(--color-downriver);
   --bg-secondary: var(--color-bascay);
+  --topic-primary: var(--color-rock-blue);
+  --topic-secondary: var(--color-mirage);
 }
 
 body {
