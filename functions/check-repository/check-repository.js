@@ -124,7 +124,7 @@ exports.handler = async (event, context, callback) => {
       forks: repo.forks,
       stargazers_count: repo.stargazers_count,
       banned: isBanned,
-      banned_url: isBanned ? bannedIssues.shift().url : null,
+      banned_url: isBanned ? bannedIssues.shift().html_url : null,
     }
 
     callback(null, {

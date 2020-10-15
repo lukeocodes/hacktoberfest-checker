@@ -20,6 +20,27 @@ export default {
         content:
           'Hacktoberfest Repository Checker - Unofficial Site. Hacktoberfest presented by DigitalOcean',
       },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Hacktoberfest Repository Checker',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'Check if a project takes part in Hacktoberfest this year by looking up their repository URL.',
+      },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'hacktoberfest.ninja',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: baseUrl + '/assets/images/OpenGraph.png',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
   },
