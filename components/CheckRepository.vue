@@ -206,6 +206,7 @@ export default {
 
       if (false === isGitHub.test(this.url)) {
         return this.errors.push({message: 'Please use a GitHub url to check.'});
+      }
 
       this.processing = true
       this.$axios
