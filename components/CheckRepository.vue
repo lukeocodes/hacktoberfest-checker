@@ -190,10 +190,6 @@ export default {
     },
 
     checkRepository() {
-      if (null === this.url) {
-        return this.errors.push({message: 'Please enter a url to check.'});
-      }
-
       var isGitHub = new RegExp("https?:\\/\\/(.+?\\.)?github\\.com(\\/[A-Za-z0-9\\-\\._~:\\/\\?#\\[\\]@!$&'\\(\\)\\*\\+,;\\=]*)?");
 
       if (false === isGitHub.test(this.url)) {
