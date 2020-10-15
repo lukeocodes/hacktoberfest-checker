@@ -194,6 +194,12 @@ export default {
         return this.errors.push({message: 'Please enter a url to check.'});
       }
 
+      var isGitHub = new RegExp("https?:\\/\\/(.+?\\.)?github\\.com(\\/[A-Za-z0-9\\-\\._~:\\/\\?#\\[\\]@!$&'\\(\\)\\*\\+,;\\=]*)?");
+
+      if (false === isGitHub.test(this.url)) {
+        return this.errors.push({message: 'Please use a GitHub url to check.'});
+      }
+
       this.processing = true
       this.$axios
         .$get(`/api/check-repository?url=${this.url}`)
