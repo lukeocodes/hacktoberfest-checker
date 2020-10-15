@@ -204,7 +204,7 @@ export default {
       }
 
       var isGitHub = new RegExp("https?:\\/\\/(.+?\\.)?github\\.com(\\/[A-Za-z0-9\\-\\._~:\\/\\?#\\[\\]@!$&'\\(\\)\\*\\+,;\\=]*)?");
-      var isGitHubRepo = new RegExp('[a-zA-Z]+\/[a-zA-Z]+');
+      var isGitHubRepo = new RegExp("[a-zA-Z]+\/[a-zA-Z]+");
 
       if(!isGitHub.test(this.url) && isGitHubRepo.test(this.url)) {
         this.url = `https://github.com/${this.url}`;
