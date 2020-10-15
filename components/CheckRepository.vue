@@ -3,7 +3,9 @@
     <div class="z-0 w-full h-without-header">
       <div class="flex flex-col items-center justify-end text-center h-3/4">
         <div class="w-1/2">
-          <h1 class="Title text-2xl md:text-4xl xl:text-6xl">Do they <strong>Hacktoberfest?</strong></h1>
+          <h1 class="Title text-2xl md:text-4xl xl:text-6xl">
+            Do they <strong>Hacktoberfest?</strong>
+          </h1>
           <p class="Subtitle text-1xl md:text-2xl xl:text-3xl">
             Check if a project takes part in
             <strong>Hacktoberfest</strong> this year by looking up their
@@ -122,7 +124,12 @@
                 placeholder="e.g. https://github.com/digitalocean/hacktoberfest"
                 :disabled="processing"
               />
-              <button :disabled="processing" class="Button text-sm md:text-1xl xl:text-3xl">Do they?</button>
+              <button
+                :disabled="processing"
+                class="Button text-sm md:text-1xl xl:text-3xl"
+              >
+                Do they?
+              </button>
             </form>
           </div>
           <div>
@@ -199,14 +206,18 @@ export default {
     },
 
     checkRepository() {
-      if (null === this.url) {
-        return this.errors.push({message: 'Please enter a url to check.'});
+      if (this.url === null) {
+        return this.errors.push({ message: 'Please enter a url to check.' })
       }
 
-      var isGitHub = new RegExp("https?:\\/\\/(.+?\\.)?github\\.com(\\/[A-Za-z0-9\\-\\._~:\\/\\?#\\[\\]@!$&'\\(\\)\\*\\+,;\\=]*)?");
+      const isGitHub = new RegExp(
+        "https?:\\/\\/(.+?\\.)?github\\.com(\\/[A-Za-z0-9\\-\\._~:\\/\\?#\\[\\]@!$&'\\(\\)\\*\\+,;\\=]*)?"
+      )
 
-      if (false === isGitHub.test(this.url)) {
-        return this.errors.push({message: 'Please use a GitHub url to check.'});
+      if (isGitHub.test(this.url) === false) {
+        return this.errors.push({
+          message: 'Please use a GitHub url to check.',
+        })
       }
 
       this.processing = true

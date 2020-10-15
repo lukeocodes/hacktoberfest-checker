@@ -67,9 +67,9 @@
 
       <div v-if="repo.topics" class="Repository__Row">
         <a
-          class="Topic"
           v-for="(topic, index) in repo.topics"
           :key="index"
+          class="Topic"
           :href="`https://github.com/topics/${topic}`"
         >
           {{ topic }}
