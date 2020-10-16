@@ -121,7 +121,7 @@
                 v-model="url"
                 class="Input text-sm md:text-1xl xl:text-3xl"
                 type="text"
-                placeholder="e.g. https://github.com/digitalocean/hacktoberfest"
+                :placeholder="`e.g. https://github.com/${randomRepoName} or ${randomRepoName}`"
                 :disabled="processing"
               />
               <button
@@ -172,6 +172,12 @@ export default {
         height: '50px',
         width: '10px',
       },
+      repos: [
+        'cli/cli',
+        'digitalocean/hacktoberfest',
+        'lukeocodes/guys-bot',
+        'alhassanv/boilerplate',
+      ],
     }
   },
 
@@ -182,6 +188,10 @@ export default {
 
     theyHacktoberfest() {
       return (this.result.topic || this.result.tag_prs) && !this.result.banned
+    },
+
+    randomRepoName() {
+      return this.repos[Math.floor(Math.random() * this.repos.length)]
     },
   },
 
@@ -206,19 +216,25 @@ export default {
     },
 
     checkRepository() {
-      if (this.url === null) {
+      if (!this.url) {
         return this.errors.push({ message: 'Please enter a url to check.' })
       }
 
-      var isGithub = new RegExp("https?:\\/\\/(.+?\\.)?github\\.com(\\/[A-Za-z0-9\\-\\._~:\\/\\?#\\[\\]@!$&'\\(\\)\\*\\+,;\\=]*)?");
-      var isGithubRepo = new RegExp("[a-zA-Z]+\/[a-zA-Z]+");
+      // eslint-disable-next-line no-var
+      var isGithub = new RegExp(
+        "https?:\\/\\/(.+?\\.)?github\\.com(\\/[A-Za-z0-9\\-\\._~:\\/\\?#\\[\\]@!$&'\\(\\)\\*\\+,;\\=]*)?"
+      )
+      // eslint-disable-next-line no-var
+      var isGithubRepo = new RegExp('[a-zA-Z]+/[a-zA-Z]+')
 
-      if(!isGithub.test(this.url)) {
-        this.url = `https://github.com/${this.url}`;
+      if (!isGithub.test(this.url)) {
+        this.url = `https://github.com/${this.url}`
       }
 
       if (!isGithub.test(this.url) && !isGithubRepo.test(this.url)) {
-        return this.errors.push({ message: 'Please use a GitHub url to check.' });
+        return this.errors.push({
+          message: 'Please use a GitHub url to check.',
+        })
       }
 
       this.processing = true
