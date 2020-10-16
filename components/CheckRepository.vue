@@ -119,7 +119,7 @@
                 v-model="url"
                 class="Input text-sm md:text-1xl xl:text-3xl"
                 type="text"
-                :placeholder="`e.g. https://github.com/${randomRepoName()} or ${randomRepoName()}`"
+                :placeholder="`e.g. https://github.com/${randomRepoName} or ${randomRepoName}`"
                 :disabled="processing"
               />
               <button :disabled="processing" class="Button text-sm md:text-1xl xl:text-3xl">Do they?</button>
