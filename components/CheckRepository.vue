@@ -119,7 +119,7 @@
                 v-model="url"
                 class="Input text-sm md:text-1xl xl:text-3xl"
                 type="text"
-                :placeholder="`e.g. https://github.com/${randomRepoName} or ${randomRepoName}`"
+                :placeholder="`e.g. https://github.com/${randomRepoName()} or ${randomRepoName()}`"
                 :disabled="processing"
               />
               <button :disabled="processing" class="Button text-sm md:text-1xl xl:text-3xl">Do they?</button>
@@ -176,6 +176,10 @@ export default {
 
     theyHacktoberfest() {
       return (this.result.topic || this.result.tag_prs) && !this.result.banned
+    },
+
+    randomRepoName() {
+      return this.repos[Math.floor(Math.random() * this.repos.length)]
     },
   },
 
@@ -243,10 +247,6 @@ export default {
       this.checkRepository()
     },
   },
-
-    randomRepoName() {
-      return this.repos[Math.floor(Math.random() * this.repos.length)];
-    },
 }
 </script>
 
