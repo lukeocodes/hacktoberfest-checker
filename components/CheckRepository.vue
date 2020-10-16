@@ -210,14 +210,15 @@ export default {
         return this.errors.push({ message: 'Please enter a url to check.' })
       }
 
-      const isGitHub = new RegExp(
-        "https?:\\/\\/(.+?\\.)?github\\.com(\\/[A-Za-z0-9\\-\\._~:\\/\\?#\\[\\]@!$&'\\(\\)\\*\\+,;\\=]*)?"
-      )
+      var isGithub = new RegExp("https?:\\/\\/(.+?\\.)?github\\.com(\\/[A-Za-z0-9\\-\\._~:\\/\\?#\\[\\]@!$&'\\(\\)\\*\\+,;\\=]*)?");
+      var isGithubRepo = new RegExp("[a-zA-Z]+\/[a-zA-Z]+");
 
-      if (isGitHub.test(this.url) === false) {
-        return this.errors.push({
-          message: 'Please use a GitHub url to check.',
-        })
+      if(!isGithub.test(this.url)) {
+        this.url = `https://github.com/${this.url}`;
+      }
+
+      if (!isGithub.test(this.url) && !isGithubRepo.test(this.url)) {
+        return this.errors.push({ message: 'Please use a GitHub url to check.' });
       }
 
       this.processing = true
