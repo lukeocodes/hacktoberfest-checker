@@ -119,7 +119,7 @@
                 v-model="url"
                 class="Input text-sm md:text-1xl xl:text-3xl"
                 type="text"
-                placeholder="e.g. https://github.com/digitalocean/hacktoberfest"
+                :placeholder="`e.g. https://github.com/${randomRepoName} or ${randomRepoName}`"
                 :disabled="processing"
               />
               <button :disabled="processing" class="Button text-sm md:text-1xl xl:text-3xl">Do they?</button>
@@ -165,6 +165,7 @@ export default {
         height: '50px',
         width: '10px',
       },
+      repos: ["cli/cli", "digitalocean/hacktoberfest", "lukeocodes/guys-bot", "alhassanv/boilerplate"],
     }
   },
 
@@ -242,6 +243,10 @@ export default {
       this.checkRepository()
     },
   },
+
+    randomRepoName() {
+      return this.repos[Math.floor(Math.random() * this.repos.length)];
+    },
 }
 </script>
 
