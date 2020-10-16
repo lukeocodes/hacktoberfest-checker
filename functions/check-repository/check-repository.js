@@ -48,6 +48,7 @@ const getPulls = async (repo) => {
   return pulls
 }
 
+/* This function isn't currently used...
 const getOpenHelpWantedIssues = async (repo) => {
   const { data: issues } = await octokit.issues.listForRepo({
     owner: repo.owner.login,
@@ -58,6 +59,7 @@ const getOpenHelpWantedIssues = async (repo) => {
 
   return issues
 }
+*/
 
 const getBannedIssues = async (repo) => {
   const { data: issues } = await octokit.issues.listForRepo({
