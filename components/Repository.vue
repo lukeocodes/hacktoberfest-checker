@@ -65,7 +65,7 @@
         </div>
       </div>
 
-      <div v-if="repo.topics" class="Repository__Row">
+      <div v-if="repo.topics" class="Repository__Row Repository__Topics">
         <a
           v-for="(topic, index) in repo.topics"
           :key="index"
@@ -193,6 +193,10 @@ export default {
   @apply my-2;
 }
 
+.Repository__Topics {
+  @apply my-4;
+}
+
 .Repository__Name {
   @apply text-xl;
 }
@@ -236,11 +240,13 @@ export default {
 }
 
 .Topic {
-  background-color: var(--topic-secondary);
-  box-shadow: inset 0 0 0 1px var(--topic-primary);
+  @apply text-sm;
+  background-color: var(--bg-secondary);
+  color: var(--color-tertiary);
   margin-right: 5px;
   padding: 0px 10px;
-  border-radius: 50px;
+  border-radius: 10px;
+  height: 20px;
 }
 
 @screen md {
