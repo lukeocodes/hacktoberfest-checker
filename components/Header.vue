@@ -6,13 +6,22 @@
           <Logo />
         </div>
         <nav class="Desktop__Menu">
-          <a
-            href="https://hacktoberfest.digitalocean.com"
-            class="Desktop__Link"
-          >
-            Click for the Official Site
-          </a>
-          <ColorPicker />
+          <ul class="flex">
+            <li class="mr-6">
+              <NuxtLink to="/" class="Desktop__Link">Home</NuxtLink>
+            </li>
+            <li class="mr-6">
+              <NuxtLink to="/details" class="Desktop__Link">Details</NuxtLink>
+            </li>
+            <li class="mr-6">
+              <NuxtLink to="/checker" class="Desktop__Link"
+                >Check a Repository</NuxtLink
+              >
+            </li>
+            <li class="mr-6">
+              <ColorPicker />
+            </li>
+          </ul>
         </nav>
       </div>
     </div>
@@ -42,6 +51,11 @@
 
 .Desktop__Link {
   @apply text-base leading-6 font-medium transition ease-in-out duration-150;
+}
+
+.Desktop__Link.nuxt-link-exact-active {
+  @apply border-b-2;
+  border-color: var(--color-secondary);
 }
 
 .Desktop__Link:focus {

@@ -1,9 +1,9 @@
 <template>
   <article>
-    <CheckRepository />
-    <div class="prose lg:prose-xl max-w-none">
+    <Hero />
+    <section class="prose lg:prose-xl max-w-none">
       <nuxt-content :document="page" />
-    </div>
+    </section>
   </article>
 </template>
 
@@ -18,36 +18,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.nuxt-content {
-  @apply mx-auto w-9/12;
-}
-
-.nuxt-content,
-.nuxt-content h1,
-.nuxt-content h2,
-.nuxt-content h3,
-.nuxt-content h4,
-.nuxt-content h5,
-.nuxt-content h6 {
-  font-family: 'Inter Regular', 'Helvetica', 'Arial', san-serif;
-}
-
-.nuxt-content {
-  color: var(--color);
-}
-
-.nuxt-content h1,
-.nuxt-content h2,
-.nuxt-content h3,
-.nuxt-content h4,
-.nuxt-content h5,
-.nuxt-content h6 {
-  color: var(--color-tertiary);
-}
-
-.prose a {
-  color: var(--color-secondary);
-}
-</style>
