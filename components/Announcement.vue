@@ -1,12 +1,9 @@
 <template>
-  <a
-    class="Announcement__Link"
-    href="https://hacktoberfest.digitalocean.com/hacktoberfest-update"
-  >
-    <span class="Link__Button">Updated</span>
+  <a class="Announcement__Link" href="https://hacktoberfest.digitalocean.com">
+    <span class="Link__Button">Unofficial Site</span>
     <span class="Link__Text"
-      >Hacktoberfest is now officially opt-in only for projects and
-      maintainers.</span
+      >This is an unofficial site. Click for the official Hacktoberfest
+      site.</span
     >
   </a>
 </template>

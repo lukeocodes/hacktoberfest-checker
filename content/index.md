@@ -1,7 +1,11 @@
 ---
-title: "Hacktoberfest Repository Checker - Unofficial Site"
-description: "Hacktoberfest Repository Checker - Unofficial Site. Hacktoberfest presented by DigitalOcean"
+title: "Hacktoberfest Ninja - Checker"
+description: "Hacktoberfest Ninja - Checker - Hacktoberfest presented by DigitalOcean"
 ---
+
+<center>
+  <img class="Splash-Image" alt="Person sitting with laptop infront of commit tree - from undraw.io" />
+</center>
 
 ## Event details
 
