@@ -2,30 +2,22 @@
   <div class="z-0 w-full h-without-header">
     <div class="flex flex-col items-center justify-end text-center h-3/4">
       <div class="w-1/2">
-        <h1 class="text-2xl Title md:text-4xl xl:text-6xl">
-          Do they <strong>Hacktoberfest?</strong>
-        </h1>
+        <h1
+          class="text-2xl Title md:text-4xl xl:text-6xl"
+          v-html="$t('components.check_repository.title')"
+        />
       </div>
       <div class="w-4/5 mt-4 mb-8">
         <div v-if="isErrors" class="Errors">
-          <h2 class="Title">
-            {{ errors.length > 1 ? 'Errors' : 'Error' }}
-          </h2>
+          <h1 class="text-xl Title md:text-2xl xl:text-4xl">
+            {{ $t('components.check_repository.error') }}
+          </h1>
 
-          <h3>
-            <p>
-              Your request for repository <strong>{{ url }}</strong> failed!
-            </p>
-            <p>
-              Check the following
-              {{ errors.length > 1 ? 'errors' : 'error' }}:
-            </p>
-            <ul>
-              <li v-for="(error, index) in errors" :key="index">
-                <code>{{ error.message ? error.message : error }}</code>
-              </li>
-            </ul>
-          </h3>
+          <ul class="mb-4">
+            <li v-for="(error, index) in errors" :key="index">
+              <code>{{ error.message ? error.message : error }}</code>
+            </li>
+          </ul>
 
           <a
             href="#"
@@ -44,12 +36,12 @@
                 clipRule="evenodd"
               />
             </svg>
-            Check another?
+            {{ $t('components.check_repository.retry') }}
           </a>
         </div>
         <div v-else-if="result" class="Result">
           <h2
-            class="Title"
+            class="text-xl Title md:text-2xl xl:text-4xl"
             :class="{
               'Title--yes': theyHacktoberfest,
               'Title--no': !theyHacktoberfest,
@@ -58,10 +50,14 @@
             {{ theyHacktoberfest ? 'Yes' : 'No' }}
           </h2>
           <h3>
-            Results are in! <strong>{{ result.name }}</strong>
-            {{ theyHacktoberfest ? 'is' : 'is not' }} taking part in
-            <strong>Hacktoberfest</strong> so far.
+            {{ $t('components.check_repository.results_are_in') }}
+            <strong>{{ result.long_name || result.name }}</strong>
           </h3>
+          <h3
+            v-if="theyHacktoberfest"
+            v-html="$t('components.check_repository.success')"
+          />
+          <h3 v-else v-html="$t('components.check_repository.failure')" />
           <a
             href="#"
             class="inline-flex items-center px-4 py-2 font-bold text-gray-800 bg-gray-300 rounded hover:bg-gray-400"
@@ -79,7 +75,7 @@
                 clipRule="evenodd"
               />
             </svg>
-            Check another?
+            {{ $t('components.check_repository.retry') }}
           </a>
         </div>
         <div v-else-if="processing" class="Processing">
@@ -122,7 +118,7 @@
               :disabled="processing"
               class="text-sm Button md:text-1xl xl:text-3xl"
             >
-              Do they?
+              {{ $t('components.check_repository.cta') }}
             </button>
           </form>
         </div>
@@ -267,21 +263,12 @@ export default {
   color: var(--color-tertiary);
 }
 
-.Title strong {
-  color: var(--color-secondary);
-}
-
-.Subtitle {
-  @apply leading-tight tracking-wide;
-  color: var(--color-tertiary);
-}
-
-.Subtitle strong {
+.Title >>> strong {
   color: var(--color-secondary);
 }
 
 .Result h3 {
-  @apply mb-4;
+  @apply text-lg mb-4;
   color: var(--color-tertiary);
 }
 .Result h3 strong {

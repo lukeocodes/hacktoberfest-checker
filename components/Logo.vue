@@ -1,9 +1,9 @@
 <template>
   <a href="#" class="flex">
     <img
-      class="h-20 w-auto sm:h-20 pr-2"
+      class="w-auto h-20 pr-2 sm:h-20"
       src="~/assets/images/Icon.svg"
-      alt="Hacktoberfest"
+      :alt="$t('components.logo.alt')"
     />
   </a>
 </template>

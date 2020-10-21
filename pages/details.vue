@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  async asyncData({ $content }) {
-    const page = await $content('details').fetch()
+  async asyncData({ $content, app: { i18n } }) {
+    const page = await $content(i18n.locale, 'details').fetch()
 
     return {
       page,

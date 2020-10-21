@@ -8,18 +8,25 @@
         <nav class="Desktop__Menu">
           <ul class="flex">
             <li class="mr-6">
-              <NuxtLink to="/" class="Desktop__Link">Home</NuxtLink>
+              <NuxtLink :to="localePath('/')" class="Desktop__Link"
+                >Home</NuxtLink
+              >
             </li>
             <li class="mr-6">
-              <NuxtLink to="/details" class="Desktop__Link">Details</NuxtLink>
+              <NuxtLink :to="localePath('/details')" class="Desktop__Link"
+                >Details</NuxtLink
+              >
             </li>
             <li class="mr-6">
-              <NuxtLink to="/checker" class="Desktop__Link"
+              <NuxtLink :to="localePath('/checker')" class="Desktop__Link"
                 >Check a Repository</NuxtLink
               >
             </li>
             <li class="mr-6">
               <ColorPicker />
+            </li>
+            <li class="mr-6">
+              <LangPicker />
             </li>
           </ul>
         </nav>
