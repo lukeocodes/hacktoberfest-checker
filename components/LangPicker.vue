@@ -69,8 +69,8 @@ export default {
 }
 .lang-svg{
   margin-top: 2px;
-  }
-  .lang-dropdown{
-    margin-top: 1px;
-  }
+}
+.lang-dropdown{
+  margin-top: 1px;
+}
 </style>
