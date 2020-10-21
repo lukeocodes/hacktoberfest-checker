@@ -1,6 +1,6 @@
 # Contribuir
 
-Si estás interesado en contribuir, lee el [código de conducta](/../../CODE_OF_CONDUCT.md) antes de hacerlo.
+Si estás interesado en contribuir, lee el [código de conducta](../../CODE_OF_CONDUCT.md) antes de hacerlo.
 
 ## Traducir
 
