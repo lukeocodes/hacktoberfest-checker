@@ -3,7 +3,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-![Hacktoberfest](./assets/images/Logo%20Sponsors%20Light.svg)
+![Hacktoberfest](/../assets/images/Logo%20Sponsors%20Light.svg)
 
 Alojado en [https://hacktoberfest.ninja](https://hacktoberfest.ninja), esto permite a los usuarios saber si un proyecto está participando en el hacktoberfest.
 
@@ -59,11 +59,11 @@ Podrás acceder al sitio en la dirección [localhost:8888](http://localhost:8888
 
 ## Contribuir
 
-Las contribuiciones son bienvenidads! Mira el archivo[CONTRIBUTING](./CONTRIBUTING.es.md) file.
+Las contribuiciones son bienvenidads! Mira el archivo [CONTRIBUTING](./CONTRIBUTING.es.md).
 
 ## Licencia
 
-Licenciado como MIT. Mira el archivo [LICENSE](./LICENSE).
+Licenciado como MIT. Mira el archivo [LICENSE](/../LICENSE).
 ## Contribuidores ✨
 
 Muchas gracias a estas personas maravillosas ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
