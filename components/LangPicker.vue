@@ -20,7 +20,7 @@
       id="lang"
       v-model="selectedLocale"
       name="lang"
-      class="uppercase lang-dropdown"
+      class="uppercase LangPicker__Dropdown"
       @change="switchLocale(selectedLocale)"
     >
       <option :value="currentLocale.code" selected="selected">
@@ -70,7 +70,9 @@ export default {
 .lang-svg {
   margin-top: 2px;
 }
-.lang-dropdown {
+
+.LangPicker__Dropdown {
   margin-top: 1px;
+  background-color: transparent;
 }
 </style>
