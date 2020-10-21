@@ -3,7 +3,7 @@ title: "Hacktoberfest Ninja - Checker"
 description: "Hacktoberfest Ninja - Checker - Hacktoberfest presented by DigitalOcean"
 ---
 
-## Values
+## Valores
 
 Inspired by you, the community, through your actions and stories.
 
