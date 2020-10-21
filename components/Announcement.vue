@@ -1,10 +1,7 @@
 <template>
   <a class="Announcement__Link" href="https://hacktoberfest.digitalocean.com">
-    <span class="Link__Button">Unofficial Site</span>
-    <span class="Link__Text"
-      >This is an unofficial site. Click for the official Hacktoberfest
-      site.</span
-    >
+    <span class="Link__Button">{{ $t('components.announcement.button') }}</span>
+    <span class="Link__Text">{{ $t('components.announcement.text') }}</span>
   </a>
 </template>
 

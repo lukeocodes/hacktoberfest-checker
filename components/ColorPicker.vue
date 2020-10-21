@@ -1,6 +1,8 @@
 <template>
   <div class="ColorPicker__Toggle">
-    <label for="dark" class="Toggle__Label">Dark Mode</label>
+    <label for="dark" class="Toggle__Label">{{
+      $t('components.color_picker.label')
+    }}</label>
     <div class="Toggle__Container">
       <input
         id="dark"
@@ -27,7 +29,7 @@ export default {
 
 <style scoped>
 .ColorPicker__Toggle {
-  @apply ml-10;
+  @apply ml-6;
 }
 
 .Toggle__Label {

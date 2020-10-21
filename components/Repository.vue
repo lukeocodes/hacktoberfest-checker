@@ -34,16 +34,28 @@
         <div class="flex-initial pr-10">
           {{ repo.description }}
           <ul v-if="theyHacktoberfest" class="mt-2 ml-8 list-disc">
-            <li v-if="repo.topic"><code>hacktoberfest</code> topic</li>
-            <li v-if="repo.tag_prs"><code>hacktoberfest-accepted</code> PRs</li>
+            <li
+              v-if="repo.topic"
+              v-html="$t('components.repository.has_topic')"
+            />
+            <li
+              v-if="repo.tag_prs"
+              v-html="$t('components.repository.has_pr')"
+            />
           </ul>
           <ul v-if="!theyHacktoberfest" class="mt-2 ml-8 list-disc">
-            <li v-if="!repo.topic">Missing <code>hacktoberfest</code> topic</li>
-            <li v-if="!repo.tag_prs">
-              No <code>hacktoberfest-accepted</code> PRs
-            </li>
+            <li
+              v-if="!repo.topic"
+              v-html="$t('components.repository.no_topic')"
+            />
+            <li
+              v-if="!repo.tag_prs"
+              v-html="$t('components.repository.no_pr')"
+            />
             <li v-if="repo.banned">
-              <a :href="repo.banned_url">Excluded from Hacktoberfest</a>
+              <a :href="repo.banned_url">{{
+                $t('components.repository.banned')
+              }}</a>
             </li>
           </ul>
         </div>
@@ -53,13 +65,13 @@
               class="Button Button__Remove"
               @click="$emit('remove', $vnode.key)"
             >
-              Remove
+              {{ $t('components.repository.remove') }}
             </button>
             <button
               class="Button Button__Refresh"
               @click="$emit('refresh', $vnode.key)"
             >
-              Refresh
+              {{ $t('components.repository.refresh') }}
             </button>
           </div>
         </div>
@@ -139,7 +151,8 @@
         </span>
 
         <span v-if="repo.open_help_wanted_issue_count">
-          {{ repo.open_help_wanted_issue_count }} issues need help
+          {{ repo.open_help_wanted_issue_count }}
+          {{ $t('components.repository.issues_need_help') }}
         </span>
 
         <span>

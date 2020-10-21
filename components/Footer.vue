@@ -1,7 +1,7 @@
 <template>
   <footer>
     <a href="https://hacktoberfest.digitalocean.com" class="Footer__Sponsors">
-      Hacktoberfest presented by
+      {{ $t('components.footer.presented_by') }}
       <img alt="Hacktoberfest" class="Sponsors__Image" />
     </a>
 
@@ -9,7 +9,7 @@
       <ul class="Details__Links">
         <li>
           <a href="https://hacktoberfest.digitalocean.com">
-            Official Hacktoberfest Site
+            {{ $t('components.footer.offical_site') }}
           </a>
         </li>
         <li class="Links__Social">

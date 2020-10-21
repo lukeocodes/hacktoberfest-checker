@@ -1,3 +1,5 @@
+import i18n from './i18n.config.js'
+
 require('dotenv').config()
 const baseUrl = process.env.URL || 'http://localhost:8888'
 
@@ -76,7 +78,11 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://i18n.nuxtjs.org/
+    'nuxt-i18n',
   ],
+
+  i18n,
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
