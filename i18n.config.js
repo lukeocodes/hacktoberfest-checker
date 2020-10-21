@@ -2,9 +2,9 @@ module.exports = {
   locales: [
     {
       code: 'en',
-      iso: 'en-US',
+      iso: 'en',
       name: 'English',
-      file: 'en-US.js',
+      file: 'en.js',
     },
   ],
   defaultLocale: 'en',
