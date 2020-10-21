@@ -67,10 +67,10 @@ export default {
 .LangPicker {
   @apply ml-6;
 }
-.lang-svg{
+.lang-svg {
   margin-top: 2px;
 }
-.lang-dropdown{
+.lang-dropdown {
   margin-top: 1px;
 }
 </style>
