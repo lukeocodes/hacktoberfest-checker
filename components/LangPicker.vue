@@ -6,7 +6,7 @@
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
-        class="w-4"
+        class="w-4 lang-svg"
       >
         <path
           strokeLinecap="round"
@@ -20,7 +20,7 @@
       id="lang"
       v-model="selectedLocale"
       name="lang"
-      class="uppercase"
+      class="uppercase lang-dropdown"
       @change="switchLocale(selectedLocale)"
     >
       <option :value="currentLocale.code" selected="selected">
@@ -66,5 +66,11 @@ export default {
 <style scoped>
 .LangPicker {
   @apply ml-6;
+}
+.lang-svg {
+  margin-top: 2px;
+}
+.lang-dropdown {
+  margin-top: 1px;
 }
 </style>
