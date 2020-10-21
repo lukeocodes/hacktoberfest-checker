@@ -7,6 +7,7 @@
         viewBox="0 0 24 24"
         stroke="currentColor"
         class="w-4"
+        style="margin-top: 2px;"
       >
         <path
           strokeLinecap="round"
@@ -22,6 +23,7 @@
       name="lang"
       class="uppercase"
       @change="switchLocale(selectedLocale)"
+      style="margin-top: 1px;"
     >
       <option :value="currentLocale.code" selected="selected">
         {{ currentLocale.name }}
