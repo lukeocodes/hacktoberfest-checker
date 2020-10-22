@@ -6,8 +6,14 @@ module.exports = {
       name: 'English',
       file: 'en.js',
     },
+    {
+      code: 'hi',
+      iso: 'hi',
+      name: 'हिंदी',
+      file: 'hi.js',
+    },
   ],
-  defaultLocale: 'en',
+  defaultLocale: 'hi',
   lazy: true,
   langDir: 'lang/',
   detectBrowserLanguage: {
