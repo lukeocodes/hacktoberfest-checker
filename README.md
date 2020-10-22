@@ -1,9 +1,14 @@
 # Hacktoberfest Checker ([https://hacktoberfest.ninja](https://hacktoberfest.ninja))
+
+#### _Read this in [other languages](TRANSLATIONS.md)._
+
+<kbd>[English](./README.es.md)</kbd> | <kbd>[Española](./.github/lang/README.es.md)</kbd>
+
+![Hacktoberfest](./assets/images/Logo%20Sponsors%20Light.svg)
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-
-![Hacktoberfest](./assets/images/Logo%20Sponsors%20Light.svg)
 
 Hosted at [https://hacktoberfest.ninja](https://hacktoberfest.ninja), this allows users to check if a project is taking part is Hacktoberfest.
 
@@ -64,6 +69,7 @@ Contributions welcome! See [CONTRIBUTING](./CONTRIBUTING.md) file.
 ## License
 
 Licensed as MIT. See [LICENSE](./LICENSE) file.
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
