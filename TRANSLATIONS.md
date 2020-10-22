@@ -37,10 +37,8 @@
 | Norsk                    |         |               |        |              |
 | Persian (Finglish)       |         |               |        |              |
 | Polski                   |         |               |        |              |
-| Português (Portugal)     |         |               |        |              |
 | Português                |         |               |        |              |
 | Shqip                    |         |               |        |              |
-| Slovenčina               |         |               |        |              |
 | Slovenščina              |         |               |        |              |
 | Suomeksi                 |         |               |        |              |
 | Svenska                  |         |               |        |              |
@@ -67,7 +65,6 @@
 | मराठी                     |         |               |        |              |
 | हिंदी                      |         |               |        |              |
 | বাংলা                     |         |               |        |              |
-| বাংলা                     |         |               |        |              |
 | ગુજરાતી                   |         |               |        |              |
 | தமிழ்                     |         |               |        |              |
 | తెలుగు                    |         |               |        |              |
@@ -77,5 +74,5 @@
 | မြန်မာ                     |         |               |        |              |
 | 한국어                     |         |               |        |              |
 | 中文 (Simplified)         |         |               |        |              |
-| 中文(Traditional)         |         |               |        |              |
+| 中文 (Traditional)         |         |               |        |              |
 | 日本語                    |         |               |        |              |
