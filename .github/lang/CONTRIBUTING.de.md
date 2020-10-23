@@ -29,15 +29,11 @@ Du solltest den Inhalt der Datei `lang/en.js` in deine neue Sprachdatei kopieren
 
 ### Inhalt
 
-Content lives in the `content/` directory under a directory named after the [Zwei-Buchstaben-Iso-Code für deine Sprache](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
-
 Der Inhalt Liegt im Verzeichnis `content/` unter einem Verzeichnis, das nach dem iso-code für deine Sprache benannt ist [Zwei-Buchstaben-Iso-Code für deine Sprache](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
 
 z.B. Spanisch (Festland)
 
 - `content/es/`
-
-You should copy the `content/en/` directory to your new language directory, then proceed to translate all the contents of those files. Careful not to break any of the HTML that might exist. The frontmatter at the top of the documents is not used currently, but please translate that too.
 
 Kopiere das Verzeichnis `content/en/` in dein neues Sprachverzeichnis, und fahre dann damit fort, den gesamten Inhalt dieser Dateien zu übersetzen. Achte darauf, nichts von dem eventuell vorhandenen HTML kaputt zu machen. Die 'frontmatter' am Anfang der Dokumente wird aktuell nicht verwendet, aber bitte übersetze ihn auch.
 
@@ -49,8 +45,6 @@ Derzeit sind die zu übersetzenden Dateien:
 ## Probleme
 
 Suche dir ein "issue", und Schicke mir eine Nachricht für weitere Informationen und beanspruche das "issue" für dich. Dann kannst du beginnen an deinem "issue" zu arbeiten und eine PR machen, sobald es fertig ist.
-
-To make a pull-request, please make sure you are forking the repository before you branch off of it. PLEASE DO NOT modify your own `main` branch before making a pull-reques to this `main` branch. If in doubt, please ask.
 
 Um einen "pull-request" zu stellen, vergewissere dich bitte, dass das du das repository "forkst", bevor du einen neuen branch erstellst. Modifiziere BITTE NICHT deinen eigenen "main" branch, bevor du einen "pull-reques" auf diesen `main` branch stellst. Im Zweifelsfall frage bitte nach.
 
