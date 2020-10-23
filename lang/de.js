@@ -56,6 +56,7 @@ export default {
         'Dieses Projekt nimmt bisher nicht am <strong>Hacktoberfest</strong> teil.',
       results_are_in: 'Ergebnisse stehen bereit für',
       cta: 'Wirklich?',
+      noRepoFound: 'Keine bisherigen repo checks gefunden... bis jetzt!',
     },
 
     color_picker: {

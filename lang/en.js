@@ -56,6 +56,7 @@ export default {
         'This project is not taking part in <strong>Hacktoberfest</strong> so far.',
       results_are_in: 'Results are in for',
       cta: 'Do they?',
+      noRepoFound: 'No previous repo checks found... yet!',
     },
 
     color_picker: {

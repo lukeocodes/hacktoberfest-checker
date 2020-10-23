@@ -133,7 +133,7 @@
                 @refresh="refreshPrevious"
               />
             </template>
-            <li v-else>No previous repo checks found... yet!</li>
+            <li v-else>{{ $t('components.check_repository.noRepoFound') }}</li>
           </ul>
         </div>
       </div>
