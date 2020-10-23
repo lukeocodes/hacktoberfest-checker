@@ -6,6 +6,12 @@ module.exports = {
       name: 'English',
       file: 'en.js',
     },
+    {
+      code: 'de',
+      iso: 'de',
+      name: 'Deutsch',
+      file: 'de.js',
+    },
   ],
   defaultLocale: 'en',
   lazy: true,
