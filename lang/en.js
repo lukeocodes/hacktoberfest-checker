@@ -46,6 +46,12 @@ export default {
         'This is an unofficial site. Click for the official Hacktoberfest site.',
     },
 
+    navigation: {
+      home: 'Home',
+      details: 'Details',
+      check: 'Check a Repository',
+    },
+
     check_repository: {
       title: 'Do they <strong>Hacktoberfest?</strong>',
       error: 'Error',

@@ -46,6 +46,12 @@ export default {
         'Dies ist eine inoffizielle Website. Klicke hier für die offizielle Hacktoberfest-Website.',
     },
 
+    navigation: {
+      home: 'Home',
+      details: 'Details',
+      check: 'Überprüfe ein Repository',
+    },
+
     check_repository: {
       title: 'Nimmt ein Projekt am <strong>Hacktoberfest</strong> teil?',
       error: 'Fehler',
