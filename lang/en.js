@@ -46,6 +46,12 @@ export default {
         'This is an unofficial site. Click for the official Hacktoberfest site.',
     },
 
+    navigation: {
+      home: 'Home',
+      details: 'Details',
+      check: 'Check a Repository',
+    },
+
     check_repository: {
       title: 'Do they <strong>Hacktoberfest?</strong>',
       error: 'Error',
@@ -56,6 +62,7 @@ export default {
         'This project is not taking part in <strong>Hacktoberfest</strong> so far.',
       results_are_in: 'Results are in for',
       cta: 'Do they?',
+      noRepoFound: 'No previous repo checks found... yet!',
     },
 
     color_picker: {

@@ -8,19 +8,19 @@
         <nav class="Desktop__Menu">
           <ul class="flex">
             <li class="mr-6">
-              <NuxtLink :to="localePath('/')" class="Desktop__Link"
-                >Home</NuxtLink
-              >
+              <NuxtLink :to="localePath('/')" class="Desktop__Link">{{
+                $t('components.navigation.home')
+              }}</NuxtLink>
             </li>
             <li class="mr-6">
-              <NuxtLink :to="localePath('/details')" class="Desktop__Link"
-                >Details</NuxtLink
-              >
+              <NuxtLink :to="localePath('/details')" class="Desktop__Link">{{
+                $t('components.navigation.details')
+              }}</NuxtLink>
             </li>
             <li class="mr-6">
-              <NuxtLink :to="localePath('/checker')" class="Desktop__Link"
-                >Check a Repository</NuxtLink
-              >
+              <NuxtLink :to="localePath('/checker')" class="Desktop__Link">{{
+                $t('components.navigation.check')
+              }}</NuxtLink>
             </li>
             <li class="mr-6">
               <ColorPicker />
