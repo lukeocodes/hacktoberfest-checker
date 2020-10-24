@@ -1,14 +1,6 @@
 # Vérificateur Hacktoberfest ([https://hacktoberfest.ninja](https://hacktoberfest.ninja))
 
-#### _Lisez ceci en [autres langues](TRANSLATIONS.md)._
-
-<kbd>[langue Anglaise](./README.es.md)</kbd> | <kbd>[l'Espagnol](./.github/lang/README.es.md)</kbd> | <kbd>[ | <kbd>[allemande](./.github/lang/README.de.md)</kbd>
-
 ![Hacktoberfest](./assets/images/Logo%20Sponsors%20Light.svg)
-
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Hébergé à [https://hacktoberfest.ninja](https://hacktoberfest.ninja), cela permet aux utilisateurs de vérifier si un projet participe est Hacktoberfest.
 
