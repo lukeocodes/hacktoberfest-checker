@@ -2,7 +2,7 @@
 
 #### _Read this in [other languages](TRANSLATIONS.md)._
 
-<kbd>[Deutsch](./README.de.md)</kbd> | 
+<kbd>[Deutsch](./.github/lang/README.de.md)</kbd> | 
 <kbd>[English](./README.es.md)</kbd> | 
 <kbd>[Española](./.github/lang/README.es.md)</kbd> | 
 <kbd>[हिंदी](./.github/lang/README.hi.md)</kbd>
