@@ -8,7 +8,7 @@ Les traductions sont disponibles en ** 3 ** parties, que vous pouvez soumettre e
 
  ### Documentation du site Web
 
- Les fichiers de documentation du site Web existent dans le répertoire `. / Github / lang`. Si vous souhaitez soumettre une traduction, veuillez inclure les fichiers suivants avec le [code ISO à deux lettres pour votre langue] (https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+ Les fichiers de documentation du site Web existent dans le répertoire `./Github/ ang`. Si vous souhaitez soumettre une traduction, veuillez inclure les fichiers suivants avec le [code ISO à deux lettres pour votre langue](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
 
  z.B. chinois
 
@@ -19,23 +19,23 @@ Les traductions sont disponibles en ** 3 ** parties, que vous pouvez soumettre e
 
  ### i18n
 
- Les fichiers de langue se trouvent dans le répertoire `lang /` et existent en tant que fichiers JavaScript, nommés d'après le [code iso à deux lettres de votre langue] (https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+ Les fichiers de langue se trouvent dans le répertoire `lang/` et existent en tant que fichiers JavaScript, nommés d'après le [code iso à deux lettres de votre langue](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
 
  z.B. Hindi
 
  - `lang/hi.js`
 
- Vous devez copier le contenu du fichier `lang / en.js` dans votre nouveau fichier de langue, puis procéder à la traduction de chaque chaîne. Veillez à ne pas casser les chaînes contenant des balises.
+ Vous devez copier le contenu du fichier `lang/en.js` dans votre nouveau fichier de langue, puis procéder à la traduction de chaque chaîne. Veillez à ne pas casser les chaînes contenant des balises.
 
  ### contenu
 
- Le contenu se trouve dans le répertoire `content /` sous un répertoire nommé d'après l'iso-code de votre langue [code iso à deux lettres pour votre langue] (https://en.wikipedia.org/wiki/List_of_ISO_639 -1_codes).
+ Le contenu se trouve dans le répertoire `content/` sous un répertoire nommé d'après l'iso-code de votre langue [code iso à deux lettres pour votre langue] (https://en.wikipedia.org/wiki/List_of_ISO_639 -1_codes).
 
  z.B. Espagnol (continent)
 
  - `content/es/`
 
- Copiez le répertoire `content / en /` dans votre nouveau répertoire de langue, puis procédez à la traduction de tout le contenu de ces fichiers. Veillez à ne pas casser le code HTML éventuellement présent. Le «frontmatter» au début des documents n'est actuellement pas utilisé, mais veuillez également le traduire.
+ Copiez le répertoire `content/ en/` dans votre nouveau répertoire de langue, puis procédez à la traduction de tout le contenu de ces fichiers. Veillez à ne pas casser le code HTML éventuellement présent. Le «frontmatter» au début des documents n'est actuellement pas utilisé, mais veuillez également le traduire.
 
  Actuellement, les fichiers à traduire sont:
 
