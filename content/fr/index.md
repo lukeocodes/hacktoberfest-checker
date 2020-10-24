@@ -1,5 +1,5 @@
 ---
-title: "Hacktoberfest Ninja - Vérificateur"
+title: "Hacktoberfest Ninja - Checker"
 description: "Hacktoberfest Ninja - Checker - Hacktoberfest présenté par DigitalOcean"
 ---
 
