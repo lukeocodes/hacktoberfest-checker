@@ -19,4 +19,4 @@ Le Hacktoberfest® est ouvert à tous dans notre communauté mondiale. Que vous 
 
 Afin de recevoir votre T-shirt Hacktoberfest ou votre Hacktoberfest Tree Reward, vous devez vous inscrire et soumettre quatre pull requests (PR) valides entre le 1er et le 31 octobre (dans chaque fuseau horaire). Les RP peuvent être dirigés vers les dépôts publics participants sur GitHub qui sont sur le thème Hacktoberfest. Si un responsable signale votre pull request comme spam ou comme comportement non conforme au code de conduite du projet, vous êtes exclu de la participation. Cette année, les 70 000 premiers participants ayant réussi le concours peuvent recevoir un prix.
 
-Lisez les [Détails de participation] (https://hacktoberfest.digitalocean.com/details) pour découvrir comment vous pouvez obtenir votre T-shirt Hacktoberfest ou votre Hacktoberfest Tree Reward.
+Lisez les [Détails de participation](https://hacktoberfest.digitalocean.com/details) pour découvrir comment vous pouvez obtenir votre T-shirt Hacktoberfest ou votre Hacktoberfest Tree Reward.
