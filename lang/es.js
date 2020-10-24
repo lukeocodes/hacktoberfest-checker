@@ -45,7 +45,7 @@ export default {
       text:
         'Este sitio no es oficial. Clica aquí para ir a la web oficial del Hacktoberfest.',
     },
-    
+
    navigation: {
       home: 'Inicio',
       details: 'Deatlles',
