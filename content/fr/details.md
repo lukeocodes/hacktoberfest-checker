@@ -57,7 +57,7 @@ Enfin, une demande d'extraction pour corriger une faute de frappe est correcte, 
 
 - Les dépôts incorrects seront exclus. Dans le passé, nous avons vu de nombreux référentiels qui encouragent les participants à faire de simples demandes d'extraction - telles que l'ajout de leur nom à un fichier - pour obtenir rapidement une demande d'extraction pour terminer Hacktoberfest. Bien que cela puisse être un outil d'apprentissage pour les nouveaux contributeurs, cela va à l'encontre de l'une de nos valeurs fondamentales pour Hacktoberfest. La qualité des pull requests est primordiale; la quantité vient en second. Ces référentiels n'encouragent pas les contributions de qualité et fournissent un avantage injuste pour relever le défi Hacktoberfest. Nous avons implémenté un système pour bloquer ces référentiels, et toutes les demandes d'extraction soumises à ces référentiels ne seront pas comptées.
 
-[Plus d'informations sur le signalement d'un référentiel qui ne suit pas les valeurs de Hacktoberfest peuvent être trouvées sur le site officiel.] (Https://hacktoberfest.digitalocean.com/details#spam)
+[Plus d'informations sur le signalement d'un référentiel qui ne suit pas les valeurs de Hacktoberfest peuvent être trouvées sur le site officiel.](Https://hacktoberfest.digitalocean.com/details#spam)
 
 <center>
   <img class="Splash-Image" alt="Personne assise avec un ordinateur portable en face de l'arbre de validation - de undraw.io" />
