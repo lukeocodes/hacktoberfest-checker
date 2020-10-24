@@ -2,8 +2,10 @@
 
 #### _Read this in [other languages](TRANSLATIONS.md)._
 
+<kbd>[Deutsch](./README.de.md)</kbd> | 
 <kbd>[English](./README.es.md)</kbd> | 
-<kbd>[Española](./.github/lang/README.es.md)</kbd>
+<kbd>[Española](./.github/lang/README.es.md)</kbd> | 
+<kbd>[हिंदी](./.github/lang/README.hi.md)</kbd>
 
 ![Hacktoberfest](./assets/images/Logo%20Sponsors%20Light.svg)
 
@@ -18,7 +20,7 @@
 | Català                   |         |               |        |              |
 | Czech                    |         |               |        |              |
 | Dansk                    |         |               |        |              |
-| Deutsch                  |         |               |        |              |
+| Deutsch                  |[✅](./content/de/)|[✅](./lang/de.js)|[✅](./.github/lang/README.de.md)|[✅](./.github/lang/CONTRIBUTING.de.md)|
 | Dutch                    |         |               |        |              |
 | English                  |[✅](./content/en/)|[✅](./lang/en.js)|[✅](./README.md)|[✅](./CONTRIBUTING.md)|
 | English (Pirate)         |         |               |        |              |
@@ -63,7 +65,7 @@
 | छत्तीसगढ़ी                   |         |               |        |              |
 | नेपाली                     |         |               |        |              |
 | मराठी                     |         |               |        |              |
-| हिंदी                      |         |               |        |              |
+| हिंदी                      |[✅](./content/hi/)|[✅](./lang/hi.js)|[✅](./.github/lang/README.hi.md)|[✅](./.github/lang/CONTRIBUTING.hi.md)|
 | বাংলা                     |         |               |        |              |
 | ગુજરાતી                   |         |               |        |              |
 | தமிழ்                     |         |               |        |              |
@@ -74,5 +76,5 @@
 | မြန်မာ                     |         |               |        |              |
 | 한국어                     |         |               |        |              |
 | 中文 (Simplified)         |         |               |        |              |
-| 中文 (Traditional)         |         |               |        |              |
+| 中文 (Traditional)        |         |               |        |              |
 | 日本語                    |         |               |        |              |
