@@ -105,6 +105,16 @@
         "translation",
         "doc"
       ]
+    },
+    {
+      "login": "alvaroartano",
+      "name": "Álvaro Artano",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/28715114?v=4",
+      "profile": "https://alvaro.codes",
+      "contributions": [
+        "translation",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
