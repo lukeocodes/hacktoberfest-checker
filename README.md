@@ -97,3 +97,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## Trees > Tees
+
+For Hacktoberfest participants: Please consider opting in to have a tree planted on your behalf in the Hacktoberfest Forest instead of claiming a T-shirt. [We need to look after our climate!](https://www.wwf.org.uk/updates/david-attenborough-life-our-planet)
