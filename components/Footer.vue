@@ -12,6 +12,9 @@
             {{ $t('components.footer.offical_site') }}
           </a>
         </li>
+        <li>
+          <a href="https://netlify.com">Netlify</a>
+        </li>
         <li class="Links__Social">
           <a href="https://twitter.com/hacktoberfest">
             <img alt="Twitter" class="Social__Image Social__Image--twitter" />

@@ -2,7 +2,10 @@
 
 #### _Read this in [other languages](TRANSLATIONS.md)._
 
-<kbd>[English](./README.es.md)</kbd> | <kbd>[Española](./.github/lang/README.es.md)</kbd>
+<kbd>[Deutsch](./README.de.md)</kbd> | 
+<kbd>[English](./README.es.md)</kbd> | 
+<kbd>[Española](./.github/lang/README.es.md)</kbd> | 
+<kbd>[हिंदी](./.github/lang/README.hi.md)</kbd>
 
 ![Hacktoberfest](./assets/images/Logo%20Sponsors%20Light.svg)
 
