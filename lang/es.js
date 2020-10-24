@@ -62,6 +62,7 @@ export default {
         'Estre proyecto no forma parte del <strong>Hacktoberfest</strong> por el momento.',
       results_are_in: 'El resultado es',
       cta: 'Participan?',
+      noRepoFound: 'No se han encontrado comprobaciones... aun!',
     },
 
     color_picker: {
