@@ -7,6 +7,12 @@ module.exports = {
       file: 'en.js',
     },
     {
+      code: 'fr',
+      iso: 'fr',
+      name: 'Française',
+      file: 'fr.js',
+    },
+    {
       code: 'de',
       iso: 'de',
       name: 'Deutsch',
