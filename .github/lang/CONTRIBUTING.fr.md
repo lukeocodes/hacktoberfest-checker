@@ -8,8 +8,7 @@ Les traductions sont disponibles en **3** parties, que vous pouvez soumettre en 
 
 ### Documentation du site Web
 
-Les fichiers de documentation du site Web existent dans le répertoire `./github/ ang`. Si vous souhaitez soumettre une traduction, veuillez inclure les fichiers 
-suivants avec le [code ISO à deux lettres pour votre langue](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+Les fichiers de documentation du site Web existent dans le répertoire `./github/lang`. Si vous souhaitez soumettre une traduction, veuillez inclure les fichiers suivants avec le [code ISO à deux lettres pour votre langue](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
 
 z.B. chinois
 
