@@ -143,6 +143,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "leobia",
+      "name": "Leonardo",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/26444579?v=4",
+      "profile": "https://leobia.github.io/",
+      "contributions": [
+        "bug",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
