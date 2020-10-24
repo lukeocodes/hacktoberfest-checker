@@ -78,7 +78,7 @@ export default {
     hero: {
       title: 'est-ce qu ils <strong>Hacktoberfest</strong>?',
       tagline:
-        'Vérifiez si un projet participe au hacktoberfest cette année en saisissant l URL du référentiel.     
+        'Vérifiez si un projet participe au hacktoberfest cette année en saisissant l URL du référentiel.',
       cta: 'Vérifier un référentiel',
     },
 
