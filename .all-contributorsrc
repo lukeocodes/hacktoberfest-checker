@@ -124,6 +124,16 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "mananchawla2005",
+      "name": "Manan Chawla",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/42414965?v=4",
+      "profile": "https://mananchawla.ml",
+      "contributions": [
+        "bug",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
