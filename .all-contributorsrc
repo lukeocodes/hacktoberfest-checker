@@ -134,6 +134,15 @@
         "bug",
         "design"
       ]
+    },
+    {
+      "login": "gregorygregio",
+      "name": "Gregory Gregio",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/16940557?v=4",
+      "profile": "https://github.com/gregorygregio",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
