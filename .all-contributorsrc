@@ -115,6 +115,15 @@
         "translation",
         "doc"
       ]
+    },
+    {
+      "login": "shreyas44",
+      "name": "Shreyas Sreenivas",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/46835608?v=4",
+      "profile": "http://bedav.org",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
