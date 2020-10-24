@@ -1,6 +1,6 @@
 # Contribuant
 
-Si vous souhaitez contribuer, faites d'abord quelques recherches [Code of Conduct](./CODE_OF_CONDUCT.md).
+Si vous souhaitez contribuer, faites d'abord quelques recherches [Code de conduite](./CODE_OF_CONDUCT.md).
 
  ## Translations
 
