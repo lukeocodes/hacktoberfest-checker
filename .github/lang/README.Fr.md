@@ -1,4 +1,4 @@
-# Vérificateur Hacktoberfest ([https://hacktoberfest.ninja](https://hacktoberfest.ninja))
+# Hacktoberfest Checker ([https://hacktoberfest.ninja](https://hacktoberfest.ninja))
 
 ![Hacktoberfest](./assets/images/Logo%20Sponsors%20Light.svg)
 
@@ -23,7 +23,7 @@ Vous devez créer un jeton d'accès personnel GitHub pour pouvoir accéder à l'
 
 [Suivez la documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) et n'oubliez pas de copier le jeton avant de quitter la page (ou vous devrez en créer deux).
 
-Il *** UNIQUEMENT *** a besoin de la portée `public_repo`. L' ajout de portées supplémentaires peut constituer un risque pour la sécurité.
+Il ***UNIQUEMENT*** a besoin de la portée `public_repo`. L' ajout de portées supplémentaires peut constituer un risque pour la sécurité.
 
 ### Installer des packages
 
@@ -52,19 +52,20 @@ $ netlify dev
 
 ### Est-ce que ça marche?
 
-Le site sera disponible sur [localhost: 8888] (http: // localhost: 8888) par défaut.
+Le site sera disponible sur [localhost: 8888](http: // localhost: 8888) par défaut.
 
 ## Contribuant
 
-Les contributions sont les bienvenues! Voir le fichier [CONTRIBUTING] (./ CONTRIBUTING.md).
+Les contributions sont les bienvenues! Voir le fichier [CONTRIBUTING](./ CONTRIBUTING.md).
 
 ## Licence
 
-Sous licence MIT. Voir le fichier [LICENSE] (./ LICENSE).
+Sous licence MIT. Voir le fichier [LICENSE](./ LICENSE).
 
 ## contributeurs ✨
 
-Merci à ces gens merveilleux ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Merci à ces gens merveilleux ([emoji key]
+(https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
