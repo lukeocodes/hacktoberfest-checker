@@ -39,7 +39,7 @@ export default {
    *
    * Strings used in /components/**.vue files
    */
-  
+
   components: {
     announcement: {
       button: 'site non officiel',
