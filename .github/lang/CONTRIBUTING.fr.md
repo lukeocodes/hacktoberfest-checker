@@ -1,6 +1,7 @@
 # Contribuant
 
-Si vous souhaitez contribuer, faites d'abord quelques recherches [Code of Conduct](./CODE_OF_CONDUCT.md).
+Si vous souhaitez contribuer, faites d'abord quelques recherches [Code of Conduct
+](./CODE_OF_CONDUCT.md).
 
 ## Translations
 
@@ -8,7 +9,7 @@ Les traductions sont disponibles en **3** parties, que vous pouvez soumettre en 
 
 ### Documentation du site Web
 
-Les fichiers de documentation du site Web existent dans le répertoire `./Github/ ang`. Si vous souhaitez soumettre une traduction, veuillez inclure les fichiers 
+Les fichiers de documentation du site Web existent dans le répertoire `./github/ ang`. Si vous souhaitez soumettre une traduction, veuillez inclure les fichiers 
 suivants avec le [code ISO à deux lettres pour votre langue](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
 
 z.B. chinois
@@ -52,7 +53,7 @@ Actuellement, les fichiers à traduire sont:
 
 Trouvez un "problème" et envoyez-moi un message pour plus d'informations et réclamez le "problème" pour vous-même. Ensuite, vous pouvez commencer à travailler sur votre problème et faire un PR dès que cela est fait.
 
-Pour faire une "pull-request", veuillez vous assurer que vous "forkez" le dépôt avant de créer une nouvelle branche. VEUILLEZ NE PAS modifier votre propre branche «main» avant de mettre un «pull-reques» sur cette branche «main». En cas de doute, veuillez demander.
+Pour faire une "pull-request", veuillez vous assurer que vous "forkez" le dépôt avant de créer une nouvelle branche. VEUILLEZ NE PAS modifier votre propre branche "main" avant de mettre un "pull-reques" sur cette branche «main». En cas de doute, veuillez demander.
 
 ## Autres améliorations
 
