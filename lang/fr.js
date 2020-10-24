@@ -43,7 +43,7 @@ export default {
     announcement: {
       button: 'Unofficial Site',
       text:
-        'C'est un site non-officiel. Cliquez pour le site officiel du Hacktoberfest.',
+        'Cest un site non-officiel. Cliquez pour le site officiel du Hacktoberfest.',
     },
 
     navigation: {
@@ -53,7 +53,7 @@ export default {
     },
 
     check_repository: {
-      title: 'Est-ce qu'ils <strong>Hacktoberfest?</strong>',
+      title: 'Est-ce qu"ils <strong>Hacktoberfest?</strong>',
       error: 'Erreur',
       retry: 'Vérifiez un autre?',
       success:
@@ -61,8 +61,8 @@ export default {
       failure:
         'Ce projet ne participe pas à <strong>Hacktoberfest</strong> jusque là.',
       results_are_in: 'Les résultats sont arrivés pour',
-      cta: 'Est-ce qu'ils??',
-      noRepoFound: 'Aucun contrôle de repo précédent trouvé ... pour l'instant!',
+      cta: "Est-ce qu'ils??",
+      noRepoFound: "Aucun contrôle de repo précédent trouvé ... pour l'instant!",
     },
 
     color_picker: {
@@ -75,9 +75,9 @@ export default {
     },
 
     hero: {
-      title: est-ce qu'ils <strong>Hacktoberfest?</strong>',
+      title: 'est-ce qu"ils <strong>Hacktoberfest?</strong>',
       tagline:
-        'Vérifier si un projet participe à <strong>Hacktoberfest</strong> cette année en recherchant l'URL de leur référentiel.',
+        'Vérifier si un projet participe à <strong>Hacktoberfest</strong> cette année en recherchant l"URL de leur référentiel.',
       cta: 'Vérifier un référentiel',
     },
 
@@ -97,7 +97,7 @@ export default {
       banned: 'Exclus du Hacktoberfest',
       remove: 'Retirer',
       refresh: 'Rafraîchir',
-      issues_need_help: 'les problèmes ont besoin d'aide',
+      issues_need_help: "les problèmes ont besoin d'aide",
     },
   },
 }
