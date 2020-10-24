@@ -63,7 +63,8 @@ export default {
         'Ce projet ne participe pas à <strong>Hacktoberfest</strong> jusque là.',
       results_are_in: 'Les résultats sont arrivés pour',
       cta: 'Est-ce qu ils ?',
-      noRepoFound: 'Aucun contrôle de repo précédent trouvé ... pour l instant!',
+      noRepoFound:
+        'Aucun contrôle de repo précédent trouvé ... pour l instant!',
     },
 
     color_picker: {
