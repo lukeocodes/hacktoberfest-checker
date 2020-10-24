@@ -39,34 +39,35 @@ export default {
    *
    * Strings used in /components/**.vue files
    */
+  
   components: {
     announcement: {
-      button: 'Unofficial Site',
+      button: 'site non officiel',
       text:
-        'Cest un site non-officiel. Cliquez pour le site officiel du Hacktoberfest.',
+        'Cest un site non officiel. Cliquez pour le site officiel du Hacktoberfest.',
     },
 
     navigation: {
-      home: 'Accueil',
-      details: 'Détails',
+      home: 'Home',
+      details: 'Details',
       check: 'Vérifier un référentiel',
     },
 
     check_repository: {
-      title: 'Est-ce qu"ils <strong>Hacktoberfest?</strong>',
+      title: 'Est-ce qu ils <strong>Hacktoberfest</strong>?',
       error: 'Erreur',
       retry: 'Vérifiez un autre?',
       success:
-        'Ce projet participe à<strong>Hacktoberfest</strong> jusque là.',
+        'Ce projet participe à <strong>Hacktoberfest</strong> jusque là.',
       failure:
         'Ce projet ne participe pas à <strong>Hacktoberfest</strong> jusque là.',
       results_are_in: 'Les résultats sont arrivés pour',
-      cta: "Est-ce qu'ils??",
-      noRepoFound: "Aucun contrôle de repo précédent trouvé ... pour l'instant!",
+      cta: 'Est-ce qu ils ?',
+      noRepoFound: 'Aucun contrôle de repo précédent trouvé ... pour l instant!',
     },
 
     color_picker: {
-      label: 'Mode sombre',
+      label: 'Dark Mode',
     },
 
     footer: {
@@ -75,9 +76,9 @@ export default {
     },
 
     hero: {
-      title: 'est-ce qu"ils <strong>Hacktoberfest?</strong>',
+      title: 'est-ce qu ils <strong>Hacktoberfest</strong>?',
       tagline:
-        'Vérifier si un projet participe à <strong>Hacktoberfest</strong> cette année en recherchant l"URL de leur référentiel.',
+        'Vérifiez si un projet participe au hacktoberfest cette année en saisissant l URL du référentiel.     
       cta: 'Vérifier un référentiel',
     },
 
@@ -86,7 +87,7 @@ export default {
     },
 
     logo: {
-      alt: 'Hacktoberfest',
+      alt: 'Hacktoberfest Logo',
     },
 
     repository: {
