@@ -45,6 +45,12 @@ export default {
       text:
         'Este sitio no es oficial. Clica aquí para ir a la web oficial del Hacktoberfest.',
     },
+    
+      navigation: {
+      home: 'Inicio',
+      details: 'Deatlles',
+      check: 'Comprueba un repositorio',
+    },
 
     check_repository: {
       title: 'Participan en <strong>Hacktoberfest?</strong>',
