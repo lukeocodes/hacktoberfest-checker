@@ -47,6 +47,7 @@
   @apply px-8 rounded-lg w-1/4 py-3;
   background-color: var(--color-tertiary);
   color: var(--bg);
+  white-space: nowrap;
 }
 
 .Button:hover {
