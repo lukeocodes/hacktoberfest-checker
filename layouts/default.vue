@@ -1,8 +1,12 @@
 <template>
   <div>
     <Announcement />
-    <Header />
-    <Nuxt />
+    <Before v-if="!$hacktoberfest.started()" />
+    <Ended v-else-if="$hacktoberfest.ended()" />
+    <template v-else>
+      <Header />
+      <Nuxt />
+    </template>
     <Footer />
   </div>
 </template>
