@@ -13,6 +13,12 @@ module.exports = {
       file: 'en.js',
     },
     {
+      code: 'es',
+      iso: 'es',
+      name: 'Española',
+      file: 'es.js',
+    },
+    {
       code: 'fr',
       iso: 'fr',
       name: 'Française',

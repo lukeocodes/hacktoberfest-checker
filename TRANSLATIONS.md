@@ -5,6 +5,7 @@
 <kbd>[Deutsch](./.github/lang/README.de.md)</kbd> | 
 <kbd>[English](./README.es.md)</kbd> | 
 <kbd>[Española](./.github/lang/README.es.md)</kbd> | 
+<kbd>[Française](./.github/lang/README.fr.md)</kbd> | 
 <kbd>[हिंदी](./.github/lang/README.hi.md)</kbd>
 
 ![Hacktoberfest](./assets/images/Logo%20Sponsors%20Light.svg)
@@ -25,8 +26,8 @@
 | English                  |[✅](./content/en/)|[✅](./lang/en.js)|[✅](./README.md)|[✅](./CONTRIBUTING.md)|
 | English (Pirate)         |         |               |        |              |
 | Español de México        |         |               |        |              |
-| Española                 |         |               |[✅](./.github/lang/README.es.md)|[✅](./.github/lang/CONTRIBUTING.es.md)|
-| Française                |         |               |        |              |
+| Española                 |[✅](./content/es/)|[✅](./lang/es.js)|[✅](./.github/lang/README.es.md)|[✅](./.github/lang/CONTRIBUTING.es.md)|
+| Française                |[✅](./content/fr/)|[✅](./lang/fr.js)|[✅](./.github/lang/README.fr.md)|[✅](./.github/lang/CONTRIBUTING.fr.md)|
 | Galego                   |         |               |        |              |
 | Igbo (Nigeria)           |         |               |        |              |
 | Italiano                 |         |               |        |              |
