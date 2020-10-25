@@ -28,10 +28,6 @@ export default {
 </script>
 
 <style scoped>
-.ColorPicker__Toggle {
-  @apply ml-6;
-}
-
 .Toggle__Label {
 }
 

@@ -64,9 +64,6 @@ export default {
 </script>
 
 <style scoped>
-.LangPicker {
-  @apply ml-6;
-}
 .lang-svg {
   margin-top: 2px;
 }

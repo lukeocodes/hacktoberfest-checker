@@ -28,6 +28,9 @@
             <li class="mr-6">
               <LangPicker />
             </li>
+            <li class="mr-6">
+              <RepoLink />
+            </li>
           </ul>
         </nav>
       </div>
@@ -54,6 +57,11 @@
 
 .Desktop__Menu {
   @apply flex uppercase;
+}
+
+.Desktop__Menu ul {
+  display: flex;
+  align-items: center;
 }
 
 .Desktop__Link {
