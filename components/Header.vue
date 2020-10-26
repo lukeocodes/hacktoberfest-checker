@@ -19,6 +19,9 @@
               >
             </li>
             <li class="mr-6">
+              <NuxtLink to="/profile" class="Desktop__Link">Profile</NuxtLink>
+            </li>
+            <li class="mr-6">
               <ColorPicker />
             </li>
           </ul>
