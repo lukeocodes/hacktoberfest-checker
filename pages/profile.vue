@@ -13,8 +13,8 @@
 export default {
   methods: {
     submit() {
-      const { clientId } = process.env;
-      window.location.href = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=http://localhost:8080/oauth/redirect`
+      const { clientId, gitHubAuthUrl, oauthRedirectUrl } = this.$config;
+      window.location.href = `${gitHubAuthUrl}?client_id=${clientId}&redirect_uri=${oauthRedirectUrl}`
     },
   },
 }
