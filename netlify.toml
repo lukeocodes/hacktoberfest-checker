@@ -1,11 +1,10 @@
 [[redirects]]
-  from = "/api/check-repository"
-  to = "/.netlify/functions/check-repository"
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
   status = 200
 
 [build]
   functions = "functions"
-
 
 [[plugins]]
   package = "@netlify/plugin-functions-install-core"

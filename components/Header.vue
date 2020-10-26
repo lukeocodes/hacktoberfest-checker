@@ -23,6 +23,9 @@
               }}</NuxtLink>
             </li>
             <li class="mr-6">
+              <a href="/api/auth/github">Log in</a>
+            </li>
+            <li class="mr-6">
               <ColorPicker />
             </li>
             <li class="mr-6">
@@ -37,6 +40,40 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      user: {},
+    }
+  },
+
+  async mounted() {
+    const status = await this.quickFetch('/api/auth/status')
+    console.log(status)
+    this.user = status.email
+  },
+
+  methods: {
+    async quickFetch(endpoint) {
+      let data
+      try {
+        const response = await fetch(endpoint, {
+          credentials: `include`,
+          headers: {
+            'Content-Type': `application/json`,
+          },
+        })
+        data = await response.json()
+      } catch (error) {
+        data = { error }
+      }
+      return data
+    },
+  },
+}
+</script>
 
 <style scoped>
 .Header__Container {
