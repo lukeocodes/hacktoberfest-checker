@@ -60,5 +60,5 @@ description: "Hacktoberfest Ninja - Checker - Hacktoberfest представле
 [Более подробную информацию о том, как жаловаться на репозитории который не следует правилам Hacktoberfestа можно найти на официальном сайте.](https://hacktoberfest.digitalocean.com/details#spam)
 
 <center>
-  <img class="Splash-Image" alt="Человек сидящий с ноутбуком перед экраном древа-изменений - от undraw.io" />
+  <img class="Splash-Image" alt="Человек с ноутбуком сидящий перед экраном древа-изменений - от undraw.io" />
 </center>
