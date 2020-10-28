@@ -53,7 +53,7 @@ export default {
     },
 
     check_repository: {
-      title: 'Принимает ли проект участие в <strong>Hacktoberfest?</strong>',
+      title: 'Принимает ли проект участие в <strong>Hacktoberfest</strong>?',
       error: 'Ошибка',
       retry: 'Снова проверить?',
       success:
@@ -63,7 +63,7 @@ export default {
       results_are_in: 'Подводятся результаты для',
       cta: 'Уверены?',
       noRepoFound:
-        'В данный момент ... предыдущих проверок репозитория не найдено!',
+        'Никаких предыдущих проверок репозиторя не найдено.. пока',
     },
 
     color_picker: {
@@ -76,7 +76,7 @@ export default {
     },
 
     hero: {
-      title: 'Принимают ли они участие в <strong>Hacktoberfest?</strong>',
+      title: 'Принимают ли они участие в <strong>Hacktoberfest</strong>?',
       tagline:
         'Проверьте принимает ли проект участие в <strong>Hacktoberfest</strong> в этом году через URL адресс их репозитория.',
       cta: 'Проверить Репозиторий',
