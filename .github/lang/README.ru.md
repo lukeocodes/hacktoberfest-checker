@@ -63,9 +63,7 @@ $ netlify dev
 Лицензированно как MIT. Смотрите файл [ЛИЦЕНЗИЯ](./LICENSE).
 
 ## Contributors ✨
-
 Благодарности выражаются этим прекрасным людям ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -92,11 +90,9 @@ $ netlify dev
     <td align="center"><a href="https://leobia.github.io/"><img src="https://avatars2.githubusercontent.com/u/26444579?v=4" width="100px;" alt=""/><br /><sub><b>Leonardo</b></sub></a><br /><a href="https://github.com/lukeocodes/hacktoberfest-checker/issues?q=author%3Aleobia" title="Bug reports">🐛</a> <a href="https://github.com/lukeocodes/hacktoberfest-checker/commits?author=leobia" title="Code">💻</a></td>
   </tr>
 </table>
-
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
 Этот проект следует [все-участники](https://github.com/all-contributors/all-contributors) спецификации. Любая помощь приветствуется!
 
 ## Деревья > Tees
