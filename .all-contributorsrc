@@ -162,6 +162,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "saxocat",
+      "name": "João",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/73019845?v=4",
+      "profile": "https://github.com/saxocat",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
