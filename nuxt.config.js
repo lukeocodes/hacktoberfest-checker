@@ -93,7 +93,7 @@ export default {
     clientId,
     clientSecret,
     gitHubAuthUrl,
-    oauthRedirectUrl: `${baseUrl}/oauth/redirect`,
+    oauthRedirectUrl: `${baseUrl}/api/oauth/redirect`,
   },
 
   privateRuntimeConfig: {

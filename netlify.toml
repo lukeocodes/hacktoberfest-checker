@@ -3,6 +3,11 @@
   to = "/.netlify/functions/check-repository"
   status = 200
 
+[[redirects]]
+  from = "/api/oauth/redirect"
+  to = "/.netlify/functions/authenticate-user"
+  status = 200
+
 [build]
   functions = "functions"
 
