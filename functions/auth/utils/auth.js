@@ -23,7 +23,7 @@ passport.use(
       callbackURL: `${BASE_URL}${ENDPOINT}/auth/github/callback`,
       scope: ['read:user', 'public_repo'],
     },
-    async (accessToken, refreshToken, profile, done) => {
+    (accessToken, refreshToken, profile, done) => {
       try {
         console.log(profile)
         const email = profile.emails[0].value
