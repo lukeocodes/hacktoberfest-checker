@@ -53,17 +53,16 @@ export default {
     },
 
     check_repository: {
-      title: 'Принимает ли проект участие в <strong>Hacktoberfest</strong>?',
+      title: 'Принимает ли проект участие в <strong>Hacktoberfest?</strong>',
       error: 'Ошибка',
-      retry: 'Снова проверить?',
+      retry: 'Проверить еще раз?',
       success:
-        'Этот проект пока ещё принимает участие в <strong>Hacktoberfest</strong> ... на данный момент.',
+        'Этот проект пока ещё принимает участие в <strong>Hacktoberfest</strong>... на данный момент.',
       failure:
-        'Этот проект ещё не учавствует в <strong>Hacktoberfest</strong> ... на данный момент.',
+        'Этот проект ещё не учавствует в <strong>Hacktoberfest</strong>... на данный момент.',
       results_are_in: 'Подводятся результаты для',
       cta: 'Уверены?',
-      noRepoFound:
-        'Никаких предыдущих проверок репозитория не найдено... пока что!',
+      noRepoFound: 'Никаких предыдущих проверок репозитория не найдено... пока что!',
     },
 
     color_picker: {
@@ -72,11 +71,11 @@ export default {
 
     footer: {
       presented_by: 'Hacktoberfest представлен',
-      offical_site: 'Официальная страница Hacktoberfest',
+      offical_site: 'Официальная Страница Hacktoberfest',
     },
 
     hero: {
-      title: 'Принимают ли они участие в <strong>Hacktoberfest</strong>?',
+      title: 'Принимают ли они участие в <strong>Hacktoberfest?</strong>',
       tagline:
         'Проверьте принимает ли проект участие в <strong>Hacktoberfest</strong> в этом году через URL адресс их репозитория.',
       cta: 'Проверить Репозиторий',
