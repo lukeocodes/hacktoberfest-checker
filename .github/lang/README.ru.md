@@ -93,8 +93,8 @@ $ netlify dev
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-Этот проект следует [все-участники](https://github.com/all-contributors/all-contributors) спецификации. Любая помощь приветствуется!
+Этот проект следует спецификации [все-участники](https://github.com/all-contributors/all-contributors). Любая помощь приветствуется!
 
 ## Деревья > Tees
 
-Для участников Hacktoberfest: пожалуйста рассматривайте возможность учавсвтвовать в программе посадки деревьев от вашего имени в Hacktoberfest Forest вместо того, чтобы брать футболку. [Мы должны следить за нашим климатом!](https://www.wwf.org.uk/updates/david-attenborough-life-our-planet)
+Для участников Hacktoberfest: пожалуйста рассматривайте возможность учавсвтвовать в программе посадки деревьев от вашего имени в Hacktoberfest Forest вместо того, чтобы брать футболку. [Мы должны контролировать наш климат!](https://www.wwf.org.uk/updates/david-attenborough-life-our-planet)
