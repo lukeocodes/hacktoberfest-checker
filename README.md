@@ -4,6 +4,7 @@
 
 <kbd>[Deutsch](./.github/lang/README.de.md)</kbd> | 
 <kbd>[English](./README.es.md)</kbd> | 
+<kbd>[Português](./.github/lang/README.pt.md)</kbd> | 
 <kbd>[Española](./.github/lang/README.es.md)</kbd> | 
 <kbd>[Française](./.github/lang/README.fr.md)</kbd> | 
 <kbd>[हिंदी](./.github/lang/README.hi.md)</kbd>
