@@ -171,6 +171,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "LIMUNADE",
+      "name": "Semyon Banser",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/20593218?v=4",
+      "profile": "https://github.com/LIMUNADE",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
