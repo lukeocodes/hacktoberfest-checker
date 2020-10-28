@@ -17,6 +17,6 @@ Hacktoberfest® está abierto a todo el mundo en nuestra comunidad global. Da ig
 
 ## Reglas
 
-Para la conseguir la camiseta de Hacktoberfest o el arbol, te tienes que registrar y hacer 4 válidas Pull Requests (PRs) entre el 1 y 31 de octubre (en cualquier zona horaria). Las PRs se pueden hacer en repositorios públicos de GitHub, aquellos que tengan la etiqueta Hacktoberfest. Si un colaborador marca tu contribuición como spam o sin seguir las reglas de conducta del proyecto, no podrás participar. Este año, los primeros 70.000 participantes que completen el reto podrán reclamar su premio.
+Para la conseguir la camiseta de Hacktoberfest o el árbol, te tienes que registrar y hacer 4 Pull Requests (PRs) válidas entre el 1 y 31 de octubre (en cualquier zona horaria). Las PRs se pueden hacer en repositorios públicos de GitHub, aquellos que tengan la etiqueta Hacktoberfest. Si un colaborador marca tu contribuición como spam o sin seguir las reglas de conducta del proyecto, no podrás participar. Este año, los primeros 70.000 participantes que completen el reto podrán reclamar su premio.
 
 Lee los [detalles de participación](https://hacktoberfest.digitalocean.com/details) para aprender como participar y poder recibir tu premio.
