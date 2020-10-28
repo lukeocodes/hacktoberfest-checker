@@ -153,6 +153,24 @@
         "bug",
         "code"
       ]
+    },
+    {
+      "login": "cristianbgp",
+      "name": "Cristian Granda",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/8507974?v=4",
+      "profile": "https://cristianbgp.com",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "saxocat",
+      "name": "João",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/73019845?v=4",
+      "profile": "https://github.com/saxocat",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,

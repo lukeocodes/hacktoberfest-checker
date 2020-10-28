@@ -53,15 +53,15 @@ export default {
     },
 
     check_repository: {
-      title: 'Participan en <strong>Hacktoberfest?</strong>',
+      title: '¿Participan en <strong>Hacktoberfest?</strong>',
       error: 'Error',
-      retry: 'Quieres probarlo de nuevo?',
+      retry: '¿Quieres probar de nuevo?',
       success:
         'Este proyecto participa en el <strong>Hacktoberfest</strong> por el momento.',
       failure:
         'Estre proyecto no forma parte del <strong>Hacktoberfest</strong> por el momento.',
       results_are_in: 'El resultado es',
-      cta: 'Participan?',
+      cta: '¿Participan?',
       noRepoFound: 'No se han encontrado comprobaciones... aun!',
     },
 
@@ -75,7 +75,7 @@ export default {
     },
 
     hero: {
-      title: 'Participan en el <strong>Hacktoberfest?</strong>',
+      title: '¿Participan en el <strong>Hacktoberfest?</strong>',
       tagline:
         'Comprueba si un proyecto forma parte del <strong>Hacktoberfest</strong> este año escribiendo la URL de su repositorio.',
       cta: 'Comprobar un repositorio',
