@@ -69,11 +69,11 @@ The site will be available on [localhost:8888](http://localhost:8888) by default
 
 ## Contributing
 
-Contributions welcome! See [CONTRIBUTING](./CONTRIBUTING.md) file.
+Contributions welcome! See the [CONTRIBUTING](./CONTRIBUTING.md) file.
 
 ## License
 
-Licensed as MIT. See [LICENSE](./LICENSE) file.
+Licensed as MIT. See the [LICENSE](./LICENSE) file.
 
 ## Contributors ✨
 
