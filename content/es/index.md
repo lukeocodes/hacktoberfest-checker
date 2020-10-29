@@ -4,7 +4,7 @@ description: "Hacktoberfest Ninja - Comprobador - Hacktoberfest presentado por D
 ---
 
 <center>
-  <img class="Splash-Image" alt="Persona sentada delante de un arbol "commit" con el ordenador - de undraw.io" />
+  <img class="Splash-Image" alt="Persona sentada delante de un arbol commit con el ordenador - de undraw.io" />
 </center>
 
 ## Detalles del evento
