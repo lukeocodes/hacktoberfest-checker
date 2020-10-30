@@ -2,12 +2,13 @@
 
 #### _Read this in [other languages](TRANSLATIONS.md)._
 
-<kbd>[Deutsch](./.github/lang/README.de.md)</kbd> | 
-<kbd>[English](./README.es.md)</kbd> | 
-<kbd>[Português](./.github/lang/README.pt.md)</kbd> | 
-<kbd>[Española](./.github/lang/README.es.md)</kbd> | 
-<kbd>[Française](./.github/lang/README.fr.md)</kbd> | 
+<kbd>[Deutsch](./.github/lang/README.de.md)</kbd> |
+<kbd>[English](./README.es.md)</kbd> |
+<kbd>[Português](./.github/lang/README.pt.md)</kbd> |
+<kbd>[Española](./.github/lang/README.es.md)</kbd> |
+<kbd>[Française](./.github/lang/README.fr.md)</kbd> |
 <kbd>[हिंदी](./.github/lang/README.hi.md)</kbd>
+<kbd>[한국어](./.github/lang/README.kr.md)</kbd>
 
 ![Hacktoberfest](./assets/images/Logo%20Sponsors%20Light.svg)
 
@@ -106,6 +107,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://cristianbgp.com"><img src="https://avatars0.githubusercontent.com/u/8507974?v=4" width="100px;" alt=""/><br /><sub><b>Cristian Granda</b></sub></a><br /><a href="#translation-cristianbgp" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/saxocat"><img src="https://avatars3.githubusercontent.com/u/73019845?v=4" width="100px;" alt=""/><br /><sub><b>João</b></sub></a><br /><a href="#translation-saxocat" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/LIMUNADE"><img src="https://avatars2.githubusercontent.com/u/20593218?v=4" width="100px;" alt=""/><br /><sub><b>Semyon Banser</b></sub></a><br /><a href="#translation-LIMUNADE" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/andylang8445"><img src="https://avatars2.githubusercontent.com/u/46326335?v=4" width="100px;" alt=""/><br /><sub><b>Semyon Banser</b></sub></a><br /><a href="#translation-LIMUNADE" title="Translation">🌍</a></td>
   </tr>
 </table>
 
