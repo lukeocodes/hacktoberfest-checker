@@ -7,7 +7,8 @@
 <kbd>[Português](./.github/lang/README.pt.md)</kbd> | 
 <kbd>[Española](./.github/lang/README.es.md)</kbd> | 
 <kbd>[Française](./.github/lang/README.fr.md)</kbd> | 
-<kbd>[हिंदी](./.github/lang/README.hi.md)</kbd>
+<kbd>[हिंदी](./.github/lang/README.hi.md)</kbd> | 
+<kbd>[한국어](./.github/lang/README.kr.md)</kbd>
 
 ![Hacktoberfest](./assets/images/Logo%20Sponsors%20Light.svg)
 
