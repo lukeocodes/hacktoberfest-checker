@@ -11,10 +11,11 @@ exports.handler = async (event, context, callback) => {
       code: authCode,
     }
     const opts = { headers: { accept: 'application/json' } }
-    const { access_token } = (await axios.post(tokenUrl, body, opts)).data
+    const tokenInfo = (await axios.post(tokenUrl, body, opts)).data
+    const authToken = tokenInfo.access_token
     callback(null, {
       statusCode: 200,
-      body: JSON.stringify({ authToken: access_token }),
+      body: JSON.stringify({ authToken }),
     })
   } catch (error) {
     callback(null, {
