@@ -15,7 +15,7 @@ per esempio i nomi dei file in Cinese
 - `.github/lang/README.zh.md`
 - `.github/lang/CONTRIBUTING.zh.md`
 
-Aggiorna i collegamenti tra i tuoi nuovi file `README.zh.md` e `CONTRIBUTING.zh.md` cosicché premendo su ***CONTRIBUZIONE*** dentro il file `README.zh.md` ti reindirizza direttamente nel file `CONTRIBUTING.zh.md`.
+Aggiorna i collegamenti tra i tuoi nuovi file `README.zh.md` e `CONTRIBUTING.zh.md` cosicché premendo su **_CONTRIBUZIONE_** dentro il file `README.zh.md` ti reindirizza direttamente nel file `CONTRIBUTING.zh.md`.
 
 ### i18n
 
