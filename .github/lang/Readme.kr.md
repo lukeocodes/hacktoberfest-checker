@@ -10,55 +10,56 @@
 <kbd>[हिंदी](./.github/lang/README.hi.md)</kbd>
 <kbd>[한국어](./.github/lang/README.kr.md)</kbd>
 
+
 ![Hacktoberfest](./assets/images/Logo%20Sponsors%20Light.svg)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-18-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Hosted at [https://hacktoberfest.ninja](https://hacktoberfest.ninja), this allows users to check if a project is taking part is Hacktoberfest.
+[https://hacktoberfest.ninja](https://hacktoberfest.ninja)를 방문하여 자신의 레포지토리가 Hecktoberfest에 적합한지 확인 할 수 있습니다.
 
 ## Local Setup
 
-As a decoupled web application, Netlify Dev is required to run the application and the Netlify function locally and use the sites check-repository feature.
+독립적으로 실행될 수 있는 어플리케이션으로서, Netlify Dev 프로그램과 Netlify 기능을 로컬 시스템 상에서 실행되어야 합니다. 그 후에, 웹사이트 상의 check-repository 기능을 사용하세요.
 
 ### Netlify Dev
 
-Install [Netlify Dev](https://www.netlify.com/products/dev/#how-it-works) to the application and Netlify Functions locally.
+[Netlify Dev](https://www.netlify.com/products/dev/#how-it-works)을 로컬 시스템에 설치 하세요.
 
 ```bash
 # install Netlify Dev
 $ npm install netlify-cli -g
 ```
 
-### Create a Personal Access Token
+### Personal Access Token 생성
 
-You need to create a GitHub Personal Access Token to be able to access the GitHub API from your local environment.
+로컬 환경에서 깃허브 API에 접근하기 위해 GitHub Personal Access Token을 생성하여야 합니다.
 
-[Follow the documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) and don't forget to copy the token before you leave the page (or you'll need to make two).
+[문서](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)에 명시된 단계를 따르고, 페이지를 떠나기 전에 생성된 토큰을 반드시 별도로 저장해야 합니다(토큰을 저장하지 않았다면 새로운 토큰을 생성해야 합니다).
 
-It ***ONLY*** needs the `public_repo` scope. Adding more scopes could be a security risk.
+토큰을 생성할때 `public_repo` ***권한만*** 주는것을 권장합니다. 추가 권한들을 주는것은 보안 이슈가 될 수 있습니다.
 
-### Install Packages
+### 패키지 설치
 
-To install the packages required for this project, run:
+이 프로젝트를 위해 필요한 패키지를 설치하려면 다음을 실행하세요:
 
 ```bash
 npm install
 ```
 
-### Configure Environment
+### 환경 설정
 
-Create a `.env` file and add your access token to it as shown here.
+`.env` 파일을 생성하고, 아래에 서술된 방법으로 토큰을 붙여넣으세요.
 
 ```env
 # .env
 GITHUB_ACCESS_TOKEN=your_access_token_123
 ```
 
-### Start the Local Environment
+### 로컬 환경
 
-Using the Netlify Dev CLI, start the application.
+Netlify Dev CLI를 사용하여 어플리케이션을 실행하세요.
 
 ```bash
 $ netlify dev
@@ -66,19 +67,19 @@ $ netlify dev
 
 ### Does it work?
 
-The site will be available on [localhost:8888](http://localhost:8888) by default.
+사이트는 자동적으로 [localhost:8888](http://localhost:8888) 에서 접근할 수 있습니다.
 
-## Contributing
+## 프로젝트에 기여하기
 
-Contributions welcome! See the [CONTRIBUTING](./CONTRIBUTING.md) file.
+컨트리뷰션은 환영입니다! 자세한 내용은 [CONTRIBUTING](./CONTRIBUTING.kr.md) 파일을 참고하세요.
 
-## License
+## 라이선스
 
-Licensed as MIT. See the [LICENSE](./LICENSE) file.
+이 프로젝트는 MIT 라이선스를 따르고 있습니다. [LICENSE](./LICENSE) 파일을 참고하세요.
 
-## Contributors ✨
+## 기여자들 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+다음의 사람들에게 감사를 표합니다 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -107,7 +108,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://cristianbgp.com"><img src="https://avatars0.githubusercontent.com/u/8507974?v=4" width="100px;" alt=""/><br /><sub><b>Cristian Granda</b></sub></a><br /><a href="#translation-cristianbgp" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/saxocat"><img src="https://avatars3.githubusercontent.com/u/73019845?v=4" width="100px;" alt=""/><br /><sub><b>João</b></sub></a><br /><a href="#translation-saxocat" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/LIMUNADE"><img src="https://avatars2.githubusercontent.com/u/20593218?v=4" width="100px;" alt=""/><br /><sub><b>Semyon Banser</b></sub></a><br /><a href="#translation-LIMUNADE" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/andylang8445"><img src="https://avatars2.githubusercontent.com/u/46326335?v=4" width="100px;" alt=""/><br /><sub><b>Semyon Banser</b></sub></a><br /><a href="#translation-LIMUNADE" title="Translation">🌍</a></td>
   </tr>
 </table>
 
@@ -115,8 +115,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+이 프로젝트는 [all-contributors](https://github.com/all-contributors/all-contributors) 표기를 진행하고 있습닌다. 형태에 구애받지 않고, 모든 종류의 기여는 환영합니다.
 
 ## Trees > Tees
 
-For Hacktoberfest participants: Please consider opting in to have a tree planted on your behalf in the Hacktoberfest Forest instead of claiming a T-shirt. [We need to look after our climate!](https://www.wwf.org.uk/updates/david-attenborough-life-our-planet)
+Hacktoberfest 참가자들에게: 티셔츠를 수령하는것 대신 Hacktoberfest가 주도하는 나무심기 캠패인에 동참하는것을 고려해 보세요![We need to look after our climate!](https://www.wwf.org.uk/updates/david-attenborough-life-our-planet)
