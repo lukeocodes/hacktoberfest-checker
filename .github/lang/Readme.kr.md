@@ -108,6 +108,7 @@ $ netlify dev
     <td align="center"><a href="https://cristianbgp.com"><img src="https://avatars0.githubusercontent.com/u/8507974?v=4" width="100px;" alt=""/><br /><sub><b>Cristian Granda</b></sub></a><br /><a href="#translation-cristianbgp" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/saxocat"><img src="https://avatars3.githubusercontent.com/u/73019845?v=4" width="100px;" alt=""/><br /><sub><b>João</b></sub></a><br /><a href="#translation-saxocat" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/LIMUNADE"><img src="https://avatars2.githubusercontent.com/u/20593218?v=4" width="100px;" alt=""/><br /><sub><b>Semyon Banser</b></sub></a><br /><a href="#translation-LIMUNADE" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/andylang8445"><img src="https://avatars2.githubusercontent.com/u/46326335?v=4" width="100px;" alt=""/><br /><sub><b>Hongjun Yun</b></sub></a><br /><a href="#translation-andylang8445" title="Translation">🌍</a></td>
   </tr>
 </table>
 
