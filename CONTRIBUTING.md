@@ -46,7 +46,7 @@ Currently the files to be translated are:
 
 Please find an issue, message for more info, claim it as yours. Then you can work on it, and make a PR once ready.
 
-To make a pull-request, please make sure you are forking the repository before you branch off of it. PLEASE DO NOT modify your own `main` branch before making a pull-reques to this `main` branch. If in doubt, please ask.
+To make a pull-request, please make sure you are forking the repository before you branch off of it. PLEASE DO NOT modify your own `main` branch before making a pull-request to this `main` branch. If in doubt, please ask.
 
 ## Other Improvements
 
