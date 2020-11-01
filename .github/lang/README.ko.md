@@ -8,7 +8,7 @@
 <kbd>[Española](./.github/lang/README.es.md)</kbd> |
 <kbd>[Française](./.github/lang/README.fr.md)</kbd> |
 <kbd>[हिंदी](./.github/lang/README.hi.md)</kbd>
-<kbd>[한국어](./.github/lang/README.kr.md)</kbd>
+<kbd>[한국어](./.github/lang/README.ko.md)</kbd>
 
 
 ![Hacktoberfest](./assets/images/Logo%20Sponsors%20Light.svg)
@@ -109,6 +109,7 @@ $ netlify dev
     <td align="center"><a href="https://github.com/saxocat"><img src="https://avatars3.githubusercontent.com/u/73019845?v=4" width="100px;" alt=""/><br /><sub><b>João</b></sub></a><br /><a href="#translation-saxocat" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/LIMUNADE"><img src="https://avatars2.githubusercontent.com/u/20593218?v=4" width="100px;" alt=""/><br /><sub><b>Semyon Banser</b></sub></a><br /><a href="#translation-LIMUNADE" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/andylang8445"><img src="https://avatars2.githubusercontent.com/u/46326335?v=4" width="100px;" alt=""/><br /><sub><b>Hongjun Yun</b></sub></a><br /><a href="#translation-andylang8445" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/ianychoi"><img src="https://avatars2.githubusercontent.com/u/6965982?v=4" width="100px;" alt=""/><br /><sub><b>Ian Y. Choi</b></sub></a><br /><a href="#translation-ianychoi" title="Translation">🌍</a></td>
   </tr>
 </table>
 
