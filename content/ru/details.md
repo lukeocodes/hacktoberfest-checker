@@ -1,6 +1,6 @@
 ---
-Заглавие: "Hacktoberfest Ninja - Checker"
-Oписание: "Hacktoberfest Ninja - Checker - Hacktoberfest представлен DigitalOcean"
+title: "Hacktoberfest Ninja - Checker"
+description: "Hacktoberfest Ninja - Checker - Hacktoberfest представлен DigitalOcean"
 ---
 
 ## Ценности
