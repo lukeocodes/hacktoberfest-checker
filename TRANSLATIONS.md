@@ -6,7 +6,8 @@
 <kbd>[English](./README.es.md)</kbd> | 
 <kbd>[Española](./.github/lang/README.es.md)</kbd> | 
 <kbd>[Française](./.github/lang/README.fr.md)</kbd> | 
-<kbd>[हिंदी](./.github/lang/README.hi.md)</kbd>
+<kbd>[हिंदी](./.github/lang/README.hi.md)</kbd> |
+<kbd>[한국어](./.github/lang/README.ko.md)</kbd>
 
 ![Hacktoberfest](./assets/images/Logo%20Sponsors%20Light.svg)
 
@@ -75,7 +76,7 @@
 | മലയാളം                   |         |               |        |              |
 | ภาษาไทย                  |         |               |        |              |
 | မြန်မာ                     |         |               |        |              |
-| 한국어                     |         |               |        |              |
+| 한국어                     |[✅](./content/ko/)|[✅](./lang/ko.js)|[✅](./.github/lang/README.ko.md)|[✅](./.github/lang/CONTRIBUTING.ko.md)|
 | 中文 (Simplified)         |         |               |        |              |
 | 中文 (Traditional)        |         |               |        |              |
 | 日本語                    |         |               |        |              |
