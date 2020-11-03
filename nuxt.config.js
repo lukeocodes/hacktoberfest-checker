@@ -2,13 +2,16 @@ import i18n from './i18n.config.js'
 
 require('dotenv').config()
 const baseUrl = process.env.URL || 'http://localhost:8888'
+const gitHubAuthUrl = process.env.GITHUB_AUTH_URL || 'GITHUB AUTH URL'
+const clientId = process.env.CLIENT_ID || 'CLIENT ID'
+const clientSecret = process.env.CLIENT_SECRET || 'CLIENT SECRET'
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
   // Env (https://nuxtjs.org/api/configuration-env/)
-  env: { baseUrl },
+  env: { baseUrl, clientId, clientSecret, gitHubAuthUrl },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -93,6 +96,10 @@ export default {
     axios: {
       browserBaseURL: baseUrl,
     },
+    clientId,
+    clientSecret,
+    gitHubAuthUrl,
+    oauthRedirectUrl: `${baseUrl}/profile`,
   },
 
   privateRuntimeConfig: {

@@ -1,0 +1,9 @@
+{
+    "name": "check-repository",
+    "version": "1.0.0",
+    "description": "",
+    "main": "authenticate-user.js",
+    "dependencies": {
+        "axios": "^0.21.0"
+    }
+}
