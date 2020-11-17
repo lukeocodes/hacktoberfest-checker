@@ -97,4 +97,31 @@ footer {
 .dark-mode .Social__Image {
   filter: invert(1);
 }
+
+
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Footer__Details {
+    align-self: center;
+    margin-top: 1em;
+  }
+
+  .Details__Links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Details__Links li {
+    border-right: none;
+  }
+
+  .Links__Social {
+    margin-top: 1em;
+    align-self: center;
+  }
+}
 </style>
