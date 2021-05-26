@@ -1,65 +1,64 @@
 ---
 title: "Hacktoberfest Ninja - Checker"
-description: "Hacktoberfest Ninja - Checker - Hacktoberfest представлен DigitalOcean"
+description: "Hacktoberfest Ninja - Checker - Hacktoberfest presented by DigitalOcean"
 ---
 
-## Ценности
+## Values
 
-Вдохновлённые вами и сообществом через ваши истории и события. 
+Inspired by you, the community, through your actions and stories.
 
-  1. Мы рады всем! Участники Hacktoberfest презентуют 151 страну и тысячу уникальных навыков. Данная программа приветствует каждого кто уже является частью сообщества открытого программного кода, а так же тех кто готов разделить подобные взгляды. 
-  2. Колличество это забава, а качество это суть. Участия в Hacktoberfest ведёт к личностному развитию, карьерным возможностям и развитию сообщества. Тем не менее всё начинается с незначительного вклада в ПО с открытым исходным кодом.
-  3. Краткосрочные действия, долгосрочный эффект. В сообществе открытого кода, мы стоим на плечах тех, кто уже проделал подобный путь. Ваше участие сохранит долгосрочный эффект на людей и технологии на долгое время после октября. Это путешествие, а не гонка.
+  1. Everyone is welcome! Participants in Hacktoberfest represented 151 countries and thousands of unique skill sets. This program welcomes everyone already who’s already part of the open source software community, and anyone who is interested in sectioning in.
+  2. Quantity is fun, quality is key. Participating in Hacktoberfest leads to personal growth, professional opportunities, and community building. However, it all begins with meaningful contributions to open source software.
+  3. Short-term action, long-term impact. In the open source software community, we are standing on the shoulders of those who came before us. Your participation has a lasting effect on people and technology long after October. This is a voyage not a race.
 
-## Приступая к Работе с Hacktoberfest
+## Getting Started with Hacktoberfest
 
-Мы просим каждого участника ознакомиться со всеми деталями для обеспечения того, чтобы мировое сообщество работало над достижением общей цели. Спасибо вам за уважение этих ценностей и следованию правил участия.
+We ask all participants to read through the details to ensure that the global community is working toward a shared goal. Thank you for honoring the values and following the rules of participation.
 
-## Детали Участия
+## Participation Details
 
-- Hacktoberfest открыт для всех участников нашего мирового сообщества. Являетесь ли вы закоренелым резидентом или ищите проекты в которых готовы принять участие в первый раз, в любом случае мы рады вас принять. 
-- Pull requestы могут быть сделаны в любом учавствующем репозитории/проекте находящемся на GitHub.
-- Разработчики проекта могут принять участие, классифицируя свои проекты по тематике Hacktoberfestа.
-- Ваши pull requestы будут засчитываться вам в испытание при условии, что репозиторий отмечен темой hacktoberfest и непосредственно после слияния, одобренного разработчиком проекта или помеченное как hacktoberfest-одобренное.
-- Дополнительно, каждый pull request с пометкой hacktoberfest-одобренно, отправленный в любой общедоступный репозиторий GitHub, с или без темы hacktoberfestа, будет считаться действительным для Hacktoberfest.
-- Вы можете зарегистрироваться в любое время с 1 по 31 октября. Просто не забудьте зарегистрироваться на официальном сайте Hacktoberfestа, чтобы ваши запросы на проведение подсчета были учтены.
+- Hacktoberfest is open to everyone in our global community. Whether you’re a seasoned contributor or looking for projects to contribute to for the first time, you’re welcome to participate.
+- Pull requests can be made in any participating GitHub-hosted repositories/projects.
+- Maintainers can opt-in to participate by classifying their projects with the hacktoberfest topic.
+- Your pull requests will count toward your participation if they are in a repository with the hacktoberfest topic and once they have been merged, approved by a maintainer or labelled as hacktoberfest-accepted.
+- Additionally, any pull request with the hacktoberfest-accepted label, submitted to any public GitHub repository, with or without the hacktoberfest topic, will be considered valid for Hacktoberfest.
+- You can sign up anytime between October 1 and October 31. Just be sure to sign up on the official Hacktoberfest website for your pull requests to count.
 
-## Правила Участия
+## Participation Rules
 
-- Чтобы получить приз, вы должны совершить 4 одобренных pull requestа (PRы) в период с 1 по 31 октября в любом часовом поясе.
+- To get a prize, you must make four eligible pull requests (PRs) between October 1–31 in any time zone.
 
-- Pull requestы прямиком до изменения правила 3 октября 2020 года в 12:00:00 по UTC (универсальное глобальное время) могли быть любые публичные репозитории на GitHub, а не только те, которые выделены цветом.
+- Pull requests prior to the rule change on October 3, 2020 at 12:00:00 UTC can be to any public repository on GitHub, not just the ones highlighted.
 
-- Pull requestы следующие за изменением правила должны быть в участвующем общедоступном репозитории на GitHub и быть объединены и помечены как hacktoberfest-одобреные или принятые.
+- Pull requests following the rule change must be to a participating public repository on GitHub, and have been merged, labelled as hacktoberfest-accepted, or approved.
 
-- Pull requestы помеченные как hacktoberfest-одобренные из любого открытого репозитория на GitHubе будут идти в копилку испытания в Hacktoberfestе, с учётом или без учёта hacktoberfest тематики.
+- Pull requests labelled as hacktoberfest-accepted will count toward to Hacktoberfest from any public repository on GitHub, with or without the hacktoberfest topic.
 
-- Pull requestы должны содержать изменения которые сделали вы сами. Если разработчик проекта пожалуется на ваш pull request как спам, то изменения не будут засчитаны за участие в Hacktoberfestе. Если разработчик проекта пожалуется на поведение не соответствующее ценностям Hacktoberfestа или своду правил, в таком случае вы будете лишены права на участие. В этом году, первые 70,000 участников могут получить майку или им будет предоставлен выбор посадить дерево.
+- The pull request must contain commits you made yourself. If a maintainer reports your pull request as spam, it will not be counted toward your participation in Hacktoberfest. If a maintainer reports behavior that’s not in line with the values of Hacktoberfest or the project’s code of conduct, you will be ineligible to participate. This year, the first 70,000 participants can earn a T-shirt or plant a tree.
 
-- Поставить правила в форму, соответствующую духу Hacktoberfestа:
+- To put the rules in a form consistent with the spirit of Hacktoberfest:
 
-## Стандарты Качества
+## Quality Standards
 
-В соответствии с ценностью #2 Hacktoberfest'а (Колличество это забава, а качество это суть), мы представили примеры pull requestов которые мы считаем вкладом низкого качества (какие мы не одобряем).
+In line with Hacktoberfest value #2 (Quantity is fun, quality is key), we have provided examples of pull requests that we consider to be low-quality contributions (which we discourage).
 
-- Pull requestы которые автоматизированы (например скриптованное открытие pull requestов для удаления пробелов/корректирования опечаток/оптимизации изображений).
-- Pull requestы которые являются подрывными (например брать чьё либо древо/изменение и делать из него pull request).
-- Pull requestы которые, по мнению разработчика проекта, являются препятствием нежели помощью.
-- Что-то, что явно является простой попыткой заработать +1 pull request в вашу копилку.
+- Pull requests that are automated (e.g. scripted opening pull requests to remove whitespace/fix typos/optimize images).
+- Pull requests that are disruptive (e.g. taking someone else's branch/commits and making a pull request).
+- Pull requests that are regarded by a project maintainer as a hindrance vs. helping.
+- Something that's clearly an attempt to simply +1 your pull request count for October.
 
-И наконец, одно дело когда 1 pull request уходит на исправление опечаток, но когда уже 4 pull requestа идут на то, чтобы убрать лишний пробел это никуда не годиться.
+Last but not least, one pull request to fix a typo is fine, but 4 pull requests to remove a stray whitespace is not.
 
-## Давайте Объединяться Чтобы Уменьшить Колличество Спама
+## Let's Work Together to Reduce Spam
 
-- Спамовые pull requestы могут быть индефицированны как "некорректные" или просто как "спам" чтобы они не шли в счёт. Разработчики проекта сталкиваются с большим колличеством спама который приходит во время Hacktoberfestа, и мы не уважаем спам так же сильно, как и вы. Если вы разработчик проекта, пожалуйста помечайте любой спамоподобный pull request отправленный в ваш репозиторий как "некорректный" или "спам" и закрывайте их. Pull requestы с такой маркировкой не идут в счёт Hacktoberfestа.
+- Spammy pull requests can be given a label that contains the word "invalid" or "spam" to discount them. Maintainers are faced with the majority of spam that occurs during Hacktoberfest, and we dislike spam just as much as you. If you're a maintainer, please label any spammy pull requests submitted to the repositories you maintain as "invalid" or "spam", and close them. Pull requests with this label won't count toward Hacktoberfest.
 
-- 14 дней требуется для обзора всех pull requestов до того как они пойдут в счёт выполненных. Как только участник отправил 4 валидных pull requestа (готовых для анализа, а не черновиков), начинается 14 дневный отчёт. Этот период даёт время разработчикам проекта на индетифицактию и маркировку спамовых и валидных pull requestов. Если pull request не помечен как некорректный за период ожидания, то в таком случае он засчитываться в копилку участника испытания Hacktoberfestа. Если какой либо pull request будет помечен как не корректный, пользователь вернётся в состояние ожидания до тех пор, пока у участника не будет четырех приемлемых заявок, после чего период рассмотрения начнется заново.
+- There's a fourteen-day review window for all pull requests before they count toward completing the challenge. Once a participant has submitted four eligible pull requests (ready-to-review, not drafts), the review window begins. This period gives maintainers time to identify and label spammy pull requests as invalid. If the pull requests are not marked as invalid within that window, they will allow the user to complete the Hacktoberfest challenge. If any of the pull requests are labeled as invalid, the user will return to the pending state until they have four eligible pull requests, at which point the review period will start again.
 
-- Плохие репозитории будут исключены. В прошлом, мы замечали репозитории которые вдохновляли участников создавать достаточно лёгкие pull requestы. К примеру добавляли их имена в файл чтобы быстро получить pull request который засчитывался в челендж Hacktoberfestа. Хотя это может быть инструментом обучения для новых участников, это идет вразрез с одной из наших основных ценностей Hacktoberfest. Качество pull requestов первостепенно; колличество идёт потом. Подобные репозитории не мотивируют усердных вложений и предоставляют нечестное преимущество в завершении Hacktoberfest испытания. Мы применили систему блокирующую подобные репозитории и любой pull request отправленные в них не будет засчитываться.
+- Bad repositories will be excluded. In the past, we've seen many repositories that encourage participants to make simple pull requests – such as adding their name to a file – to quickly gain a pull request toward completing Hacktoberfest. While this may be a learning tool for new contributors, it goes against one of our core values for Hacktoberfest. The quality of pull requests is paramount; quantity comes second. These repositories do not encourage quality contributions and provide an unfair advantage in completing the Hacktoberfest challenge. We've implemented a system to block these repositories, and any pull requests submitted to such repositories will not be counted.
 
-[Более подробную информацию о том, как жаловаться на репозитории который не следует правилам Hacktoberfestа можно найти на официальном сайте.](https://hacktoberfest.digitalocean.com/details#spam)
-[Английская версия этого файла details.md](https://github.com/lukeocodes/hacktoberfest-checker/blob/main/content/en/details.md)
+[More information on reporting a repository that doesn't follow Hacktoberfest's values can be found on the official site.](https://hacktoberfest.digitalocean.com/details#spam)
 
 <center>
-  <img class="Splash-Image" alt="Человек с ноутбуком сидящий перед экраном древа-изменений - от undraw.io" />
+  <img class="Splash-Image" alt="Person sitting with laptop infront of commit tree - from undraw.io" />
 </center>
