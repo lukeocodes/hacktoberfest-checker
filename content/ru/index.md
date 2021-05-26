@@ -1,22 +1,22 @@
 ---
 title: "Hacktoberfest Ninja - Checker"
-description: "Hacktoberfest Ninja - Checker - Hacktoberfest предоставлен DigitalOcean"
+description: "Hacktoberfest Ninja - Checker - Hacktoberfest presented by DigitalOcean"
 ---
 
 <center>
-  <img class="Splash-Image" alt="Человек с ноутбуком сидящий перед экраном древа-изменений - от undraw.io" />
+  <img class="Splash-Image" alt="Person sitting with laptop infront of commit tree - from undraw.io" />
 </center>
 
-## Детали события
+## Event details
 
-Hacktoberfest® открыт для всех участников нашего мирового сообщества. Независимо от того, являетесь ли вы разработчиком, студентом изучающим код, организатором мероприятий или компанией любого размера, вы можете помочь стимулировать рост открытого исходного кода и внести вклад в постоянно развивающееся сообщество. Поощряются все уровни подготовки и навыков для решения этого испытания.
+Hacktoberfest® is open to everyone in our global community. Whether you’re a developer, student learning to code, event host, or company of any size, you can help drive growth of open source and make positive contributions to an ever-growing community. All backgrounds and skill levels are encouraged to complete the challenge.
 
-- Hacktoberfest это праздник, открытый для всех в нашем глобально сообществе.
-- Pull requestы могут быть сделаны учасвтую в GitHub репозиториях/проектах, классифицированных Hacktoberfest тематикой.
-- Вы можете записаться в любой время начиная с 1 и заканчивая 31 октября.
+- Hacktoberfest is a celebration open to everyone in our global community.
+- Pull requests can be made in participating GitHub-hosted repositories/projects, classified with the Hacktoberfest topic.
+- You can sign up anytime between October 1 and October 31.
 
-## Правила
+## Rules
 
-Чтобы заработать вашу Hacktoberfest майку или древо в качестве награды, вы должны зафиксировать 4 верифицированных pull requestа (PRы) между 1-31 октября (в любом часовом поясе). PRы должны быть созданы в участвующих в этом публичных репозиториях на GitHub. Конкретно те которые отмечены Hacktoberfest тематикой. Если разработчик проекта пожалуется на ваш pull request как спам или если ваше поведение не будет совпадать с нормами перечисленными в своде правил, вы будите лишены права на участие. В этом году приз получат первые 70 000 участников, успешно завершивших соревнование.
+To earn your Hacktoberfest tee or tree reward, you must register and make four valid pull requests (PRs) between October 1-31 (in any time zone). PRs can be made to participating public repos on GitHub, those that have the Hacktoberfest topic. If a maintainer reports your pull request as spam or behavior not in line with the project’s code of conduct, you will be ineligible to participate. This year, the first 70,000 participants who successfully complete the challenge will be eligible to receive a prize.
 
-Прочтите [детали участия](https://hacktoberfest.digitalocean.com/details) чтобы узнать как выиграть Hacktoberfest майку или древо.
+Read the [participation details](https://hacktoberfest.digitalocean.com/details) to learn how to earn your Hacktoberfest tee or tree reward.

@@ -1,22 +1,22 @@
 ---
-title: "हैक्टोबरफेस्ट निंजा - चेकर"
-description: "हैक्टोबरफेस्ट निंजा - चेकर - हैक्टोबरफेस्ट प्रस्तुतकर्ता: डिजिटल ओशन"
+title: "Hacktoberfest Ninja - Checker"
+description: "Hacktoberfest Ninja - Checker - Hacktoberfest presented by DigitalOcean"
 ---
 
 <center>
-  <img class="Splash-Image" alt="लैपटॉप के साथ बैठे व्यक्ति कमिट ट्री को देखते हुए - undraw.io से" />
+  <img class="Splash-Image" alt="Person sitting with laptop infront of commit tree - from undraw.io" />
 </center>
 
-## कार्यक्रम विवरण
+## Event details
 
-हैक्टोबरफेस्ट® हमारे वैश्विक समुदाय में सभी के लिए खुला है। चाहे आप डेवलपर हों, कोड सीखने वाले छात्र, इवेंट होस्ट, या किसी भी आकार की कंपनी, आप खुले स्रोत दुनिया के विकास को बढ़ाने में मदद कर सकते हैं और कभी भी विकसित होने वाले समुदाय में सकारात्मक योगदान दे सकते हैं। सभी पृष्ठभूमि और कौशल स्तरों को चुनौतियों को पूरा करने के लिए प्रोत्साहित किया जाता है।
+Hacktoberfest® is open to everyone in our global community. Whether you’re a developer, student learning to code, event host, or company of any size, you can help drive growth of open source and make positive contributions to an ever-growing community. All backgrounds and skill levels are encouraged to complete the challenge.
 
-* हैक्टोबरफेस्ट हमारे वैश्विक समुदाय में सभी के लिए एक उत्सव है।
-* गिटहब पर होस्ट किए गए रिपॉज़िटरी / प्रोजेक्ट्स में भाग लेने के लिए, पुल अनुरोधों को hacktoberfest विषय के साथ वर्गीकृत किया जा सकता है।
-* आप १ अक्टूबर से ३१ अक्टूबर के बीच कभी भी रजिस्टर कर सकते हैं।
+- Hacktoberfest is a celebration open to everyone in our global community.
+- Pull requests can be made in participating GitHub-hosted repositories/projects, classified with the Hacktoberfest topic.
+- You can sign up anytime between October 1 and October 31.
 
-## नियम
+## Rules
 
-अपने हैक्टोबरफेस्ट टी या ट्री इनाम अर्जित करने के लिए, आपको १-३१ अक्टूबर (किसी भी समय क्षेत्र में) के बीच चार वैध पुल अनुरोध (पीआर) पंजीकृत करने और बनाने होंगे। पीआर गिटहब पर सार्वजनिक रिपॉजिटरीयों में भाग लेने के लिए बनाया जा सकता है, जिनके पास hacktoberfest विषय है। यदि कोई मेंटेनर आपके पुल अनुरोध को स्पैम या अवैद्य के रूप में रिपोर्ट करता है, जो परियोजना की आचार संहिता के अनुरूप नहीं है, तो आप भाग लेने के लिए अयोग्य होंगे। इस साल, पहले ७०, ००० प्रतिभागी जो चुनौती को सफलतापूर्वक पूरा करते हैं, पुरस्कार प्राप्त करने के पात्र होंगे।
+To earn your Hacktoberfest tee or tree reward, you must register and make four valid pull requests (PRs) between October 1-31 (in any time zone). PRs can be made to participating public repos on GitHub, those that have the Hacktoberfest topic. If a maintainer reports your pull request as spam or behavior not in line with the project’s code of conduct, you will be ineligible to participate. This year, the first 70,000 participants who successfully complete the challenge will be eligible to receive a prize.
 
-अपने हैक्टोबरफेस्ट टी या ट्री पुरस्कार कैसे प्राप्त करें, यह जानने के लिए [भागीदारी विवरण](https://hacktoberfest.digitalocean.com/details) पढ़ें।
+Read the [participation details](https://hacktoberfest.digitalocean.com/details) to learn how to earn your Hacktoberfest tee or tree reward.

@@ -1,5 +1,5 @@
 export default {
-  /**
+    /**
    * NAMING RULES
    *
    * {type_of_vue_file}: {
@@ -21,83 +21,62 @@ export default {
    *
    *   $t('components.announcement.button')
    */
-
-  /**
+    /**
    * Layout strings
    *
    * Strings used in /layouts/**.vue files
    */
-
-  /**
+    /**
    * Page strings
    *
    * Strings used in /pages/**.vue files
    */
-
-  /**
+    /**
    * Component strings
    *
    * Strings used in /components/**.vue files
    */
-  components: {
-    announcement: {
-      button: 'Неофициальный Сайт',
-      text:
-        'Это не официальный сайт. Кликните чтобы перейти на официальный сайт Hacktoberfest.',
-    },
-
-    navigation: {
-      home: 'Домашняя страница',
-      details: 'Детали',
-      check: 'Проверить репозиторий',
-    },
-
-    check_repository: {
-      title: 'Принимает ли проект участие в <strong>Hacktoberfest?</strong>',
-      error: 'Ошибка',
-      retry: 'Проверить еще раз?',
-      success:
-        'Этот проект пока ещё принимает участие в <strong>Hacktoberfest</strong>... на данный момент.',
-      failure:
-        'Этот проект ещё не учавствует в <strong>Hacktoberfest</strong>... на данный момент.',
-      results_are_in: 'Подводятся результаты для',
-      cta: 'Уверены?',
-      noRepoFound: 'Предыдущие проверки репозитория не найдены.. пока что!',
-    },
-
-    color_picker: {
-      label: 'Ночной Режим',
-    },
-
-    footer: {
-      presented_by: 'Hacktoberfest представлен',
-      offical_site: 'Официальная Страница Hacktoberfest',
-    },
-
-    hero: {
-      title: 'Принимают ли они участие в <strong>Hacktoberfest?</strong>',
-      tagline:
-        'Проверьте принимает ли проект участие в <strong>Hacktoberfest</strong> в этом году через URL адресс их репозитория.',
-      cta: 'Проверить Репозиторий',
-    },
-
-    lang_picker: {
-      alt: 'Язык',
-    },
-
-    logo: {
-      alt: 'Hacktoberfest лого',
-    },
-
-    repository: {
-      has_topic: '<code>hacktoberfest</code> тема',
-      has_pr: '<code>hacktoberfest-accepted</code> PRы',
-      no_topic: 'Отсутствует <code>hacktoberfest</code> раздел',
-      no_pr: 'Нет <code>hacktoberfest-accepted</code> PRов',
-      banned: 'Исключены из Hacktoberfest',
-      remove: 'Убрать',
-      refresh: 'Обновить',
-      issues_need_help: 'Проблемы требующие внимания',
-    },
-  },
-}
+    components: {
+        announcement: {
+            button: 'Unofficial Site',
+            text: 'This is an unofficial site. Click for the official Hacktoberfest site.'
+        },
+        navigation: {
+            home: 'Home',
+            details: 'Details',
+            check: 'Check a Repository'
+        },
+        check_repository: {
+            title: 'Do they <strong>Hacktoberfest?</strong>',
+            error: 'Error',
+            retry: 'Check another?',
+            success: 'This project is taking part in <strong>Hacktoberfest</strong> so far.',
+            failure: 'This project is not taking part in <strong>Hacktoberfest</strong> so far.',
+            results_are_in: 'Results are in for',
+            cta: 'Do they?',
+            noRepoFound: 'No previous repo checks found... yet!'
+        },
+        color_picker: { label: 'Dark Mode' },
+        footer: {
+            presented_by: 'Hacktoberfest presented by',
+            offical_site: 'Official Hacktoberfest Site'
+        },
+        hero: {
+            title: 'Do they <strong>Hacktoberfest?</strong>',
+            tagline: 'Check if a project takes part in <strong>Hacktoberfest</strong> this year by looking up their repository URL.',
+            cta: 'Check a Repository'
+        },
+        lang_picker: { alt: 'Language' },
+        logo: { alt: 'Hacktoberfest' },
+        repository: {
+            has_topic: '<code>hacktoberfest</code> topic',
+            has_pr: '<code>hacktoberfest-accepted</code> PRs',
+            no_topic: 'Missing <code>hacktoberfest</code> topic',
+            no_pr: 'No <code>hacktoberfest-accepted</code> PRs',
+            banned: 'Excluded from Hacktoberfest',
+            remove: 'Remove',
+            refresh: 'Refresh',
+            issues_need_help: 'issues need help'
+        }
+    }
+};
