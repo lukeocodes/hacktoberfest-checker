@@ -16,7 +16,7 @@
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/pwa": "^3.2.2",
     "@tailwindcss/typography": "^0.2.0",
-    "core-js": "^3.6.5",
+    "core-js": "^3.22.1",
     "install": "^0.13.0",
     "npm": "^6.14.8",
     "nuxt": "^2.14.7",
